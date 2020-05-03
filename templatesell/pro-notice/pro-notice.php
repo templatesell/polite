@@ -112,7 +112,7 @@ class Polite_Theme_Notice {
 		 * 2. If the user has ignored the message partially for 2 days.
 		 * 3. Dismiss always if clicked on 'Dismiss' button.
 		 */
-		if ( ( $theme_notice_start_time > strtotime( '-2 minutes' ) ) || ( $ignore_notice_partially > strtotime( '-20 minutes' ) ) || ( $ignore_notice_permanent ) ) {
+		if ( ( $theme_notice_start_time > strtotime( '-5 days' ) ) || ( $ignore_notice_partially > strtotime( '-2 days' ) ) || ( $ignore_notice_permanent ) ) {
 			return;
 		}
 		?>
@@ -125,12 +125,12 @@ class Polite_Theme_Notice {
 				printf(
 					esc_html__(
 						/* Translators: %1$s current user display name., %2$s Currently activated theme., %3$s Pro theme link., %4$s Coupon code. */
-						'Howdy, %1$s! You\'ve been using %2$s theme for a while now, and we hope you\'re happy with it. If you need more options and access to the premium features, you can %3$s. Also, you can use the coupon code %4$s to get 15 percent discount while making the purchase. Enjoy!', 'polite'
+						'Howdy, %1$s! You\'ve been using %2$s theme for a while now, and we hope you\'re happy with it. If you need more options and access to the premium features, you can %3$s. Also, you can use the coupon code %4$s to get 30 percent discount while making the purchase. Enjoy!', 'polite'
 					),
 					'<strong>' . esc_html( $this->current_user_data->display_name ) . '</strong>',
 					$this->active_theme,
 					$pro_link,
-					'<code>upgrade15</code>'
+					'<code>tsb30</code>'
 				);
 				?>
 			</p>
@@ -138,19 +138,19 @@ class Polite_Theme_Notice {
 			<div class="links">
 				<a href="<?php echo esc_url( $theme_lists[ $current_theme ] ); ?>" class="btn button-primary"
 				   target="_blank">
-					<span class="dashicons dashicons-thumbs-up"></span>
+					<span class="dashicons dashicons-cart"></span>
 					<span><?php esc_html_e( 'Upgrade To Pro', 'polite' ); ?></span>
 				</a>
 
 				<a href="?polite_nag_pro_theme_notice_partial_ignore=1" class="btn button-secondary">
-					<span class="dashicons dashicons-calendar"></span>
+					<span class="dashicons dashicons-calendar-alt"></span>
 					<span><?php esc_html_e( 'Maybe later', 'polite' ); ?></span>
 				</a>
 
 				<a href="<?php echo esc_url( $pre_sales_query_link ); ?>"
 				   class="btn button-secondary" target="_blank">
-					<span class="dashicons dashicons-edit"></span>
-					<span><?php esc_html_e( 'Got pre sales queries?', 'polite' ); ?></span>
+					<span class="dashicons dashicons-email-alt"></span>
+					<span><?php esc_html_e( 'Contact Us', 'polite' ); ?></span>
 				</a>
 			</div>
 

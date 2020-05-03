@@ -29,6 +29,10 @@
 	margin-left: 0;
 }
 
-.pro-theme-notice .notice-dismiss {
+.pro-theme-notice  .notice-dismiss {
 	text-decoration: none;
+}
+.pro-theme-notice code, 
+.pro-theme-notice kbd{
+	font-weight: bold;
 }
