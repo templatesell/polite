@@ -32,7 +32,7 @@ Polite includes support for Infinite Scroll in Jetpack.
 == Changelog ==
 = 1.0.9 - May 03 2020 =
 * Added Upgrade Notice 
-* Fixed category page text
+* Fixed category page text on archive
 
 = 1.0.8 - April 25 2020 =
 * Fixed some design issue
