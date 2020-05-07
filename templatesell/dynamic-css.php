@@ -79,7 +79,7 @@ if (!function_exists('polite_dynamic_css')) :
             .footer-social-links a:hover,
             .footer-social-links a:focus,
             .site-footer a:hover, 
-            .site-footer a:focus{ 
+            .site-footer a:focus, .content-area p a{ 
                 color : ". $polite_primary_color."; 
             }";
         }

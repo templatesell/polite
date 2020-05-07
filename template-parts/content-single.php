@@ -37,7 +37,7 @@ $social_share = absint($polite_theme_options['polite-single-social-share']);
                 <?php endif; ?>
             </div>
 
-            <div class="content post-excerpt entry-content clearfix <?php echo $drop_cap_class; ?>">
+            <div class="content post-excerpt entry-content clearfix">
                 <?php
                 the_content(sprintf(
                     wp_kses(
