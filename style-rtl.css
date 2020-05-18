@@ -1605,7 +1605,7 @@ div#MobileMenu {
 .header-image:after {
     position: absolute;
     content: "";
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.3);
     left: 0;
     top: 0;
     width: 100%;
@@ -1620,6 +1620,31 @@ div#MobileMenu {
     background: rgba(0, 0, 0, 0.8);
 }
 
+.header-1 .header-image .head_one {
+    background: transparent;
+    position: relative;
+}
+.header-image .menu-area {
+    position: relative;
+    z-index: 5;
+}
+.header-image .bar-menu a{
+    color: #fff;
+}
+.main-header.header-image .logo p, 
+.main-header.header-image .logo h1 a{
+    color: #fff;
+}
+.header-image .mobile-menu:before,
+.header-image .mobile-menu:after,
+.header-image .mobile-menu span{
+    background: #fff;
+}
+@media (max-width: 767px) {
+    .header-1 .header-image .main-menu ul{
+        background:transparent;
+    }
+}
 /*====================================================
 ## Header One
 =======================================================*/
