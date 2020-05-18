@@ -1607,7 +1607,7 @@ div#MobileMenu {
 .header-image:after {
     position: absolute;
     content: "";
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.3);
     left: 0;
     top: 0;
     width: 100%;
@@ -1620,6 +1620,13 @@ div#MobileMenu {
 }
 .header-image.sticky:after{
     background: rgba(0, 0, 0, 0.8);
+}
+.header-1 .header-image .head_one{
+    background: transparent;
+}
+.main-header.header-image .logo p, 
+.main-header.header-image .logo h1 a{
+    color: #fff;
 }
 
 /*====================================================
