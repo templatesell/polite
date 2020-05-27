@@ -20,7 +20,7 @@ function polite_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'polite_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1200,
+		'width'                  => 1920,
 		'height'                 => 450,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'polite_header_style',
