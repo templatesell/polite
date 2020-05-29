@@ -1220,11 +1220,11 @@ th {
     .main-header .logo {
         position: relative;
     }
-    .main-header .logo img {
+    /*.main-header .logo img {
         max-width: inherit;
         max-height: 90px;
         width: auto;
-    }
+    }*/
     .header-default .bar-menu {
         display: none;
     }
