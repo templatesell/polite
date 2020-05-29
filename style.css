@@ -1596,7 +1596,7 @@ div#MobileMenu {
 ================================================================*/
 /*## Header Images*/
 .header-image {
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     position: relative;
 }
 .header-image .search-box i,
