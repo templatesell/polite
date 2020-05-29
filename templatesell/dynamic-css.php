@@ -16,6 +16,7 @@ if (!function_exists('polite_dynamic_css')) :
 
         /* Color Options Options */
         $polite_primary_color              = esc_attr($polite_theme_options['polite_primary_color']);
+        $polite_logo_width              = absint($polite_theme_options['polite_logo_width_option']);
 
         $custom_css = '';
 
@@ -81,6 +82,14 @@ if (!function_exists('polite_dynamic_css')) :
             .site-footer a:hover, 
             .site-footer a:focus, .content-area p a{ 
                 color : ". $polite_primary_color."; 
+            }";
+        }
+
+        //Logo Width
+        if (!empty($polite_logo_width)) {
+            $custom_css .= "
+            .header-1 .head_one .logo{ 
+                max-width : ". $polite_logo_width."px; 
             }";
         }
 

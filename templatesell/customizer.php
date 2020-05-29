@@ -11,7 +11,10 @@ if ( !function_exists('polite_default_theme_options_values') ) :
 
         $default_theme_options = array(
 
-          /*Header Options*/
+          /*Logo Options*/
+          'polite_logo_width_option' => '300',
+
+           /*Header Options*/
             'polite_enable_offcanvas'  => 0,
             'polite_enable_search'  => 0,
 
