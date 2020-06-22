@@ -10,6 +10,9 @@
  */
 $GLOBALS['polite_theme_options'] = polite_get_options_value();
 global $polite_theme_options;
+$enable_header = absint($polite_theme_options['polite_enable_top_header']);
+$enable_menu   = absint($polite_theme_options['polite_enable_top_header_menu']);
+$enable_social = absint($polite_theme_options['polite_enable_top_header_social']);
 $offcanvas = absint($polite_theme_options['polite_enable_offcanvas']);
 $search_header = absint($polite_theme_options['polite_enable_search']);
 ?>
@@ -48,7 +51,41 @@ $search_header = absint($polite_theme_options['polite_enable_search']);
 </div>
 <?php } ?>
 <div class="js-canvi-content canvi-content">
-<header class="header-1">		
+<header class="header-1">
+		<?php if( $enable_header == 1 ){ ?>
+			<section class="top-bar-area">
+				<div class="container">
+					<?php if( $enable_menu == 1 ) { ?>
+						<nav id="top-nav" class="left-side">
+	                        <div class="top-menu">
+	    						<?php
+	    						wp_nav_menu( array(
+	    							'theme_location' => 'top',
+	    							'menu_id'        => '',
+	    							'container' => 'ul',
+	                                'menu_class'      => ''
+	    						) );
+	    						?>
+							</div>
+						</nav><!-- .top-nav -->
+					<?php } ?>
+					
+					<?php if( $enable_social == 1 ){ ?>
+						<div class="right-side">
+							<div class="social-links">
+								<?php
+									wp_nav_menu( array(
+										'theme_location' => 'social',
+										'menu_id'        => 'social-menu',
+										'menu_class'     => 'polite-social-menu',
+									) );
+								?>
+							</div>
+						</div>
+					<?php } ?>
+				</div>
+			</section>
+			<?php } ?>		
 	<?php $header_image = esc_url(get_header_image());
 	$header_class = ($header_image == "") ? '' : 'header-image';
 	?>

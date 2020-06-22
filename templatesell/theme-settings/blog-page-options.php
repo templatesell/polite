@@ -171,3 +171,52 @@ $wp_customize->add_control('polite_options[polite-show-hide-share]', array(
     'priority' => 15,
 ));
 
+/*Category Show hide*/
+$wp_customize->add_setting('polite_options[polite-show-hide-category]', array(
+    'capability' => 'edit_theme_options',
+    'transport' => 'refresh',
+    'default' => $default['polite-show-hide-category'],
+    'sanitize_callback' => 'polite_sanitize_checkbox'
+));
+
+$wp_customize->add_control('polite_options[polite-show-hide-category]', array(
+    'label' => __('Show Category', 'polite'),
+    'description' => __('Option to hide the category on the blog page.', 'polite'),
+    'section' => 'polite_blog_page_section',
+    'settings' => 'polite_options[polite-show-hide-category]',
+    'type' => 'checkbox',
+    'priority' => 15,
+));
+/*Date Show hide*/
+$wp_customize->add_setting('polite_options[polite-show-hide-date]', array(
+    'capability' => 'edit_theme_options',
+    'transport' => 'refresh',
+    'default' => $default['polite-show-hide-date'],
+    'sanitize_callback' => 'polite_sanitize_checkbox'
+));
+
+$wp_customize->add_control('polite_options[polite-show-hide-date]', array(
+    'label' => __('Show Date', 'polite'),
+    'description' => __('Option to hide the date on the blog page.', 'polite'),
+    'section' => 'polite_blog_page_section',
+    'settings' => 'polite_options[polite-show-hide-date]',
+    'type' => 'checkbox',
+    'priority' => 15,
+));
+/*Author Show hide*/
+$wp_customize->add_setting('polite_options[polite-show-hide-author]', array(
+    'capability' => 'edit_theme_options',
+    'transport' => 'refresh',
+    'default' => $default['polite-show-hide-author'],
+    'sanitize_callback' => 'polite_sanitize_checkbox'
+));
+
+$wp_customize->add_control('polite_options[polite-show-hide-author]', array(
+    'label' => __('Show Author', 'polite'),
+    'description' => __('Option to hide the author on the blog page.', 'polite'),
+    'section' => 'polite_blog_page_section',
+    'settings' => 'polite_options[polite-show-hide-author]',
+    'type' => 'checkbox',
+    'priority' => 15,
+));
+

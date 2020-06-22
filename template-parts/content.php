@@ -12,7 +12,9 @@ $read_more = esc_html($polite_theme_options['polite-read-more-text']);
 $masonry = esc_attr($polite_theme_options['polite-column-blog-page']);
 $image_location = esc_attr($polite_theme_options['polite-blog-image-layout']);
 $social_share = absint($polite_theme_options['polite-show-hide-share']);
-
+$date = absint($polite_theme_options['polite-show-hide-date']);
+$category = absint($polite_theme_options['polite-show-hide-category']);
+$author = absint($polite_theme_options['polite-show-hide-author']);
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class($masonry); ?>>
     <div class="post-wrap <?php echo esc_attr($image_location); ?>">
@@ -27,9 +29,11 @@ $social_share = absint($polite_theme_options['polite-show-hide-share']);
             </div>
         <?php } ?>
         <div class="post-content">
-            <div class="post-cats">
-                <?php polite_entry_meta(); ?>
-            </div>
+            <?php if($category == 1 ){ ?>
+                <div class="post-cats">
+                    <?php polite_entry_meta(); ?>
+                </div>
+            <?php } ?>
             <div class="post_title">
                 <?php
                 if (is_singular()) :
@@ -70,8 +74,12 @@ $social_share = absint($polite_theme_options['polite-show-hide-share']);
                     <div class="post-date">
                         <div class="entry-meta">
                             <?php
-                            polite_posted_on();
-                            polite_posted_by();
+                            if($date == 1 ){
+                                polite_posted_on();
+                            }
+                            if($author == 1 ){
+                                polite_posted_by();
+                            }
                             ?>
                         </div><!-- .entry-meta -->
                     </div>

@@ -14,6 +14,11 @@ if ( !function_exists('polite_default_theme_options_values') ) :
           /*Logo Options*/
           'polite_logo_width_option' => '300',
 
+            /*Top Header*/
+            'polite_enable_top_header'=> 0, 
+            'polite_enable_top_header_social'=> 0,
+            'polite_enable_top_header_menu'=> 0,
+
            /*Header Options*/
             'polite_enable_offcanvas'  => 0,
             'polite_enable_search'  => 0,
@@ -38,6 +43,9 @@ if ( !function_exists('polite_default_theme_options_values') ) :
             'polite-pagination-options'=> 'ajax',
             'polite-read-more-text'    => '',
             'polite-show-hide-share'   => 1,
+            'polite-show-hide-category'=> 1,
+            'polite-show-hide-date'=> 1,
+            'polite-show-hide-author'=> 1,
 
             /*Single Page */
             'polite-single-page-featured-image' => 1,

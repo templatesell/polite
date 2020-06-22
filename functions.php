@@ -46,6 +46,7 @@ if ( ! function_exists( 'polite_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'polite' ),
+			'top' => esc_html__( 'Top Menu', 'polite' ),
 			'footer' => esc_html__( 'Footer Menu', 'polite' ),
 			'social' => esc_html__( 'Social Icons', 'polite' ),
 		) );

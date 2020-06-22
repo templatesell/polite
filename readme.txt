@@ -5,7 +5,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Requires PHP: 4.7
 Tested up to: 5.4
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,13 @@ Polite includes support for Infinite Scroll in Jetpack.
 * Custom pagination for numeric is made.
 
 == Changelog ==
+= 1.1.3 - June 22 2020 =
+* Added top Header Option for social and menu
+* Show/Hide Author Option Added for Blog
+* Show/Hide Category Option Added for Blog
+* Show/Hide Date Option Added for Blog
+* Fixed some minor CSS issues
+
 = 1.1.2 - May 29 2020 =
 * Fixed Header Image transparent issues
 * Added Option for the Logo Width
