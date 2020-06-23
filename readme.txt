@@ -30,7 +30,7 @@ Polite includes support for Infinite Scroll in Jetpack.
 * Custom pagination for numeric is made.
 
 == Changelog ==
-= 1.1.3 - June 22 2020 =
+= 1.1.3 - June 23 2020 =
 * Added top Header Option for social and menu
 * Show/Hide Author Option Added for Blog
 * Show/Hide Category Option Added for Blog

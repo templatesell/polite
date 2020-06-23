@@ -112,7 +112,7 @@ class Polite_Theme_Notice {
 		 * 2. If the user has ignored the message partially for 2 days.
 		 * 3. Dismiss always if clicked on 'Dismiss' button.
 		 */
-		if ( ( $theme_notice_start_time > strtotime( '-5 days' ) ) || ( $ignore_notice_partially > strtotime( '-2 days' ) ) || ( $ignore_notice_permanent ) ) {
+		if ( ( $theme_notice_start_time > strtotime( '-10 days' ) ) || ( $ignore_notice_partially > strtotime( '-5 days' ) ) || ( $ignore_notice_permanent ) ) {
 			return;
 		}
 		?>
