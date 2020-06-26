@@ -6,9 +6,12 @@
  *
  * @package Polite
  */
+global $polite_theme_options;
+$masonry = esc_attr($polite_theme_options['polite-column-blog-page']);
+$image_location = esc_attr($polite_theme_options['polite-blog-image-layout']);
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="post-wrap">
+<article id="post-<?php the_ID(); ?>" <?php post_class($masonry); ?> >
+    <div class="post-wrap <?php echo esc_attr($image_location); ?>">
         <?php if(has_post_thumbnail()) { ?>
             <div class="post-media">
                 <?php polite_post_thumbnail(); ?>
