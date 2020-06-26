@@ -4319,6 +4319,7 @@ input[type="radio"]:checked:before {
 
 article.masonry-post {
     float: left;
+    margin-bottom: 20px;
 }
 .masonry-post .masonry-start{
     margin-right: -15px;
