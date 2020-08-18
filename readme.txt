@@ -4,7 +4,7 @@ Contributors: templatesell
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, blog, news
 Requires at least: 4.5
 Requires PHP: 4.7
-Tested up to: 5.4
+Tested up to: 5.5
 Stable tag: 1.1.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -30,6 +30,10 @@ Polite includes support for Infinite Scroll in Jetpack.
 * Custom pagination for numeric is made.
 
 == Changelog ==
+= 1.1.6 - August 18 2020 =
+* Logo width changed
+* Tested with WordPress 5.5
+
 = 1.1.5 - July 02 2020 =
 * Fixed Footer menu
 

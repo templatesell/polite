@@ -12,7 +12,7 @@ if ( !function_exists('polite_default_theme_options_values') ) :
         $default_theme_options = array(
 
           /*Logo Options*/
-          'polite_logo_width_option' => '300',
+          'polite_logo_width_option' => '600',
 
             /*Top Header*/
             'polite_enable_top_header'=> 0, 
