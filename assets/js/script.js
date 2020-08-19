@@ -45,14 +45,14 @@
         });
 
         mainMenuListDropdown.each(function () {
-            $(this).append('<span class="dropdown-plus"><a href="#"></a></span>');
+            $(this).append('<span class="dropdown-plus"></span>');
             $(this).addClass('dropdown_menu');
         });
 
-        $('.dropdown-plus').on("click", function () {
-            $(this).prev('ul').slideToggle(300);
-            $(this).toggleClass('dropdown-open');
-        });
+         $('.dropdown-plus').on("click", function () {
+             $(this).prev('ul').slideToggle(300);
+             $(this).toggleClass('dropdown-open');
+         });
 
         $('.dropdown_menu a').append('<span></span>');
     }

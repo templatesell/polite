@@ -1149,7 +1149,13 @@ th {
 .dropdown-plus.dropdown-open:after {
     display: none;
 }
-
+.main-menu li:focus-within > ul, 
+.main-menu li:focus > ul, 
+.main-menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
 .header-shadow-wrapper {
     position: absolute;
     top: 100%;
@@ -1305,6 +1311,8 @@ th {
         -o-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
     }
+    .main-menu li:focus-within > ul,
+    .main-menu li:focus > ul,
     .main-menu li:hover > ul {
         visibility: visible;
         opacity: 1;

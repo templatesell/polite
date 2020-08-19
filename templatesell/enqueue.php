@@ -25,7 +25,7 @@ function polite_scripts() {
     wp_enqueue_style( 'offcanvas-style', get_template_directory_uri() . '/assets/css/canvi.css', array(), '4.5.0' );
 
 	$masonry =  esc_attr($polite_theme_options['polite-column-blog-page']);
-    if( 'masonry-post' == $masonry )  {
+    if( 'masonry-post' == $masonry || 'one-column' == $masonry)  {
     	wp_enqueue_script( 'masonry' );
     	wp_enqueue_script( 'polite-custom-masonry', get_template_directory_uri() . '/assets/js/custom-masonry.js', array('jquery'), '4.6.0' );
    }
