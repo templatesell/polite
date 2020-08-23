@@ -4329,6 +4329,9 @@ article.masonry-post {
     float: left;
     margin-bottom: 20px;
 }
+article{
+    width: 100%;
+}
 .masonry-post .masonry-start{
     margin-right: -15px;
     margin-left: -15px;
