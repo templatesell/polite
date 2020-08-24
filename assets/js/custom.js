@@ -97,6 +97,8 @@
             if ( !$( this ).is( ':focus' ) ) {
                 $( this ).removeClass( 'locked' );
             }
-        });        
+        });
+
+          
  	}); 	
 })(jQuery);
