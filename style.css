@@ -5964,7 +5964,13 @@ div#polite-breadcrumbs {
 .hide-image .post-media{
     display: none;
 }
-
+.post-wrap.left-image.has-content{
+    display: inline-grid;
+}
+.post-wrap.left-image.has-content .post-media{
+    max-width: 100%;
+    display: block;
+}
 
 /*==============================================================
 ## Promo section
