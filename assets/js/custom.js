@@ -86,7 +86,7 @@
 			});
 	  	}
 
-	  	$( "a" ).click(function( event ) {
+	  	$( "a[href*='#']" ).click(function( event ) {
 		  event.preventDefault();
 		});
 		
