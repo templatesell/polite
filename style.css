@@ -5965,11 +5965,11 @@ div#polite-breadcrumbs {
     display: none;
 }
 .post-wrap.left-image.has-content{
-    display: inline-grid;
+    display: initial;
 }
 .post-wrap.left-image.has-content .post-media{
     max-width: 100%;
-    display: block;
+    display: initial;
 }
 
 /*==============================================================
