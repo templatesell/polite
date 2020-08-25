@@ -30,30 +30,30 @@ function polite_scripts() {
 	/*RTL CSS*/
 	wp_style_add_data( 'polite-style', 'rtl', 'replace' );
 
-$masonry =  esc_attr($polite_theme_options['polite-column-blog-page']);
-    if( 'masonry-post' == $masonry || 'one-column' == $masonry)  {
-        wp_enqueue_script( 'masonry' );
-        wp_enqueue_script( 'polite-custom-masonry', get_template_directory_uri() . '/assets/js/custom-masonry.js', array('jquery'), '4.6.0' );
-   }
-
- $polite_pagination_option =  esc_attr($polite_theme_options['polite-pagination-options']);
+    $polite_pagination_option =  esc_attr($polite_theme_options['polite-pagination-options']);
     
     if( 'ajax' == $polite_pagination_option )  {
     	
-    	wp_enqueue_script( 'polite-custom-pagination', get_template_directory_uri() . '/assets/js/custom-infinte-pagination.js', array('jquery'), '4.6.0' );
+    	wp_enqueue_script( 'polite-custom-pagination', get_template_directory_uri() . '/assets/js/custom-infinte-pagination.js', array('jquery'), '4.6.0', true );
     }
     wp_enqueue_script( 'imagesloaded', get_template_directory_uri() . '/assets/js/imagesloaded.js', array(), '20200412', true );
+
+    $masonry =  esc_attr($polite_theme_options['polite-column-blog-page']);
+    if( 'masonry-post' == $masonry || 'one-column' == $masonry)  {
+        wp_enqueue_script( 'masonry' );
+        wp_enqueue_script( 'polite-custom-masonry', get_template_directory_uri() . '/assets/js/custom-masonry.js', array('jquery'), '4.6.0', true );
+   }
 
 	wp_enqueue_script( 'polite-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20200412', true );
 
 	/*Slick JS*/
-    wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.js', array('jquery'), '4.6.0' );
+    wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.js', array('jquery'), '4.6.0', true  );
     
     /*mmenu JS*/
     $canvi =  absint($polite_theme_options['polite_enable_offcanvas']);
     if( 1  == $canvi )  {
-        wp_enqueue_script( 'offcanvas-script', get_template_directory_uri() . '/assets/js/canvi.js', array('jquery'), '4.6.0' );
-        wp_enqueue_script( 'offcanvas-custom', get_template_directory_uri() . '/assets/js/canvi-custom.js', array('jquery'), '4.6.0' );
+        wp_enqueue_script( 'offcanvas-script', get_template_directory_uri() . '/assets/js/canvi.js', array('jquery'), '4.6.0', true );
+        wp_enqueue_script( 'offcanvas-custom', get_template_directory_uri() . '/assets/js/canvi-custom.js', array('jquery'), '4.6.0', true );
     }
     
     /*Custom Script JS*/
