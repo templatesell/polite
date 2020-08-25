@@ -1,17 +1,10 @@
-(function($) {
-
-	"use strict";
-
-	jQuery(document).ready(function() {
-	    
-    	    // MASSONRY
-    $(window).load(function(){
-    	$('#masonry-loop').masonry({
-      // options
+jQuery(window).on('load', function($){    
+//masonry start
+    var $grid = jQuery('#masonry-loop').imagesLoaded( function() {
+    $grid.masonry({
+    // options
     itemSelector: '.masonry-post, .one-column, .two-column'
-    	});	    
     });
-    	    //masonry end
-	});
-
-})(jQuery);
+});  
+//masonry end
+});
