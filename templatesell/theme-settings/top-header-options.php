@@ -158,17 +158,17 @@ $wp_customize->add_setting( 'polite_options[polite_slider_overlay_transparent]',
     'capability'        => 'edit_theme_options',
     'transport' => 'refresh',
     'default'           => $default['polite_slider_overlay_transparent'],
-    'sanitize_callback' => 'polite_sanitize_number_range'
+    'sanitize_callback' => 'polite_sanitize_number'
 ) );
 $wp_customize->add_control( 'polite_options[polite_slider_overlay_transparent]', array(
    'label'     => __( 'Header Image Overlay Color Transparent', 'polite' ),
-   'description' => __('You can make the overlay transparent using this option. Add range from 0 to 1.', 'polite'),
+   'description' => __('You can make the overlay transparent using this option. Add range from 0.1 to 1.', 'polite'),
    'section'   => 'header_image',
    'settings'  => 'polite_options[polite_slider_overlay_transparent]',
    'type'      => 'number',
    'priority'  => 15,
    'input_attrs' => array(
-        'min' => '0',
+        'min' => '0.1',
         'max' => '1',
         'step' => '0.1',
     ),

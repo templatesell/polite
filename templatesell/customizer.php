@@ -22,7 +22,7 @@ if ( !function_exists('polite_default_theme_options_values') ) :
             /*Header Image*/
             'polite_enable_header_image_overlay'=> 0,
             'polite_slider_overlay_color'=> '#000000',
-            'polite_slider_overlay_transparent'=>0,
+            'polite_slider_overlay_transparent'=> '0.1',
             'polite_header_image_height'=> '100',
 
            /*Header Options*/
