@@ -125,12 +125,12 @@ class Polite_Theme_Notice {
 				printf(
 					esc_html__(
 						/* Translators: %1$s current user display name., %2$s Currently activated theme., %3$s Pro theme link., %4$s Coupon code. */
-						'Howdy, %1$s! You\'ve been using %2$s theme for a while now, and we hope you\'re happy with it. If you need more options and access to the premium features, you can %3$s. Also, you can use the coupon code %4$s to get 30 percent discount while making the purchase. Enjoy!', 'polite'
+						'Howdy, %1$s! You\'ve been using %2$s theme for a while now, and we hope you\'re happy with it. If you need more options and access to the premium features, you can %3$s. Also, you can use the coupon code %4$s to get 20 percent discount while making the purchase. Enjoy!', 'polite'
 					),
 					'<strong>' . esc_html( $this->current_user_data->display_name ) . '</strong>',
 					$this->active_theme,
 					$pro_link,
-					'<code>tsb30</code>'
+					'<code>TSCare20</code>'
 				);
 				?>
 			</p>

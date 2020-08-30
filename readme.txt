@@ -30,6 +30,14 @@ Polite includes support for Infinite Scroll in Jetpack.
 * Custom pagination for numeric is made.
 
 == Changelog ==
+= 1.1.9 - August 30 2020 =
+* Fixed Issues of Ajax Pagination Overlapping
+* Fixed some minor css issues
+* Added Header Overlay color option
+* Added Header image height option
+* Added Header image opacity option
+* Tested with latest WP version
+
 = 1.1.8 - August 25 2020 =
 * Fixed Issues of Ajax Pagination
 * Fixed some minor css issues

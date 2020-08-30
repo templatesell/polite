@@ -17,6 +17,10 @@ if (!function_exists('polite_dynamic_css')) :
         /* Color Options Options */
         $polite_primary_color              = esc_attr($polite_theme_options['polite_primary_color']);
         $polite_logo_width              = absint($polite_theme_options['polite_logo_width_option']);
+        
+        $polite_header_overlay  = esc_attr($polite_theme_options['polite_slider_overlay_color']);
+        $polite_header_transparent  = esc_attr($polite_theme_options['polite_slider_overlay_transparent']);
+        $polite_header_min_height              = absint($polite_theme_options['polite_header_image_height']);
 
         $custom_css = '';
 
@@ -90,6 +94,30 @@ if (!function_exists('polite_dynamic_css')) :
             $custom_css .= "
             .header-1 .head_one .logo{ 
                 max-width : ". $polite_logo_width."px; 
+            }";
+        }
+
+        //Header Overlay
+        if (!empty($polite_header_overlay)) {
+            $custom_css .= "
+            .header-image:before { 
+                background-color : ". $polite_header_overlay."; 
+            }";
+        }
+
+        //Header Tranparent
+        if (!empty($polite_header_transparent)) {
+            $custom_css .= "
+            .header-image:before { 
+                opacity : ". $polite_header_transparent."; 
+            }";
+        }
+
+        //Header Min Height
+        if (!empty($polite_header_min_height)) {
+            $custom_css .= "
+            .header-1 .header-image .head_one { 
+                min-height : ". $polite_header_min_height."px; 
             }";
         }
 

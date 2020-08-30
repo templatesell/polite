@@ -19,6 +19,12 @@ if ( !function_exists('polite_default_theme_options_values') ) :
             'polite_enable_top_header_social'=> 0,
             'polite_enable_top_header_menu'=> 0,
 
+            /*Header Image*/
+            'polite_enable_header_image_overlay'=> 0,
+            'polite_slider_overlay_color'=> '#000000',
+            'polite_slider_overlay_transparent'=>0,
+            'polite_header_image_height'=> '100',
+
            /*Header Options*/
             'polite_enable_offcanvas'  => 0,
             'polite_enable_search'  => 0,

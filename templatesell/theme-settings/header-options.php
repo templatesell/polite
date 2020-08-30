@@ -1,5 +1,5 @@
 <?php
-/*Footer Options*/
+/*Header Options*/
 $wp_customize->add_section('polite_header_section', array(
     'priority' => 20,
     'capability' => 'edit_theme_options',
