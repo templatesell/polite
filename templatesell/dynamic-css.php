@@ -22,8 +22,6 @@ if (!function_exists('polite_dynamic_css')) :
         $polite_header_transparent  = esc_attr($polite_theme_options['polite_slider_overlay_transparent']);
         $polite_header_min_height              = absint($polite_theme_options['polite_header_image_height']);
 
-        var_dump($polite_header_transparent);
-
         $custom_css = '';
 
         //Primary  Background 
