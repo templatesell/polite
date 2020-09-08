@@ -76,7 +76,7 @@ final class Polite_Customize {
 					'pro_text2' => esc_html__( 'Unlock More Features', 'polite' ),
 					'pro_url2'  => 'https://www.templatesell.com/item/polite-plus-masonry-wordpress-theme/',
 					'pro_text'  => esc_html__( 'Get Support', 'polite' ),
-					'pro_url'   => 'https://www.templatesell.com/contact-us/',
+					'pro_url'   => 'https://www.templatesell.com/support/',
 					'priority' => '1',
 				)
 			)

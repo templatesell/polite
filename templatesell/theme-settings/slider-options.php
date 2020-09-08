@@ -63,6 +63,7 @@ $wp_customize->add_control(
             'settings'  => 'polite_options[polite-select-category]',
             'type'      => 'category_dropdown',
             'priority'  => 15,
+            'active_callback'=> 'polite_slider_active_callback',
         )
     )
 

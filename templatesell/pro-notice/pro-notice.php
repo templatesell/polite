@@ -97,7 +97,7 @@ class Polite_Theme_Notice {
 		$theme_lists             = self::get_theme_lists();
 		$current_theme           = strtolower( $this->active_theme );
 		$theme_notice_start_time = get_option( 'polite_theme_notice_start_time' );
-		$pre_sales_query_link    = ( 'polite' !== $current_theme ) ? "https://www.templatesell.com/contact-us" : "https://www.templatesell.com/contact-us";
+		$pre_sales_query_link    = ( 'polite' !== $current_theme ) ? "https://www.templatesell.com/support" : "https://www.templatesell.com/support";
 		$ignore_notice_permanent = get_user_meta( $this->current_user_data->ID, 'polite_nag_pro_theme_notice_ignore', true );
 		$ignore_notice_partially = get_user_meta( $this->current_user_data->ID, 'polite_nag_pro_theme_notice_partial_ignore', true );
 

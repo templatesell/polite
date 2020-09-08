@@ -47,6 +47,7 @@ if ( !function_exists('polite_default_theme_options_values') ) :
             'polite-content-show-from' => 'excerpt',
             'polite-excerpt-length'    => 25,
             'polite-pagination-options'=> 'ajax',
+            'polite-blog-exclude-category'=> '',
             'polite-read-more-text'    => '',
             'polite-show-hide-share'   => 1,
             'polite-show-hide-category'=> 1,

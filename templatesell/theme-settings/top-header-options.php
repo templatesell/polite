@@ -93,7 +93,6 @@ $wp_customize->add_control(
        'settings'  => 'polite_options[polite_enable_header_image_overlay]',
         'type'      => 'checkbox',
        'priority'  => 15,
-      'active_callback' => 'polite_slider_active_callback',
    )
  );
 

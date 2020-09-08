@@ -114,6 +114,23 @@ $wp_customize->add_control('polite_options[polite-excerpt-length]', array(
     'priority' => 15,
 ));
 
+/*Exclude Category in Blog Page*/
+$wp_customize->add_setting('polite_options[polite-blog-exclude-category]', array(
+    'capability' => 'edit_theme_options',
+    'transport' => 'refresh',
+    'default' => $default['polite-blog-exclude-category'],
+    'sanitize_callback' => 'sanitize_text_field'
+));
+
+$wp_customize->add_control('polite_options[polite-blog-exclude-category]', array(
+    'label' => __('Exclude categories in Blog Listing', 'polite'),
+    'description' => __('Enter categories ids with comma separated eg: 2,7,14,47.', 'polite'),
+    'section' => 'polite_blog_page_section',
+    'settings' => 'polite_options[polite-blog-exclude-category]',
+    'type' => 'text',
+    'priority' => 15,
+));
+
 /*Blog Page Pagination Options*/
 $wp_customize->add_setting('polite_options[polite-pagination-options]', array(
     'capability' => 'edit_theme_options',

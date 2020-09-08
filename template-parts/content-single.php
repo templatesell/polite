@@ -7,12 +7,15 @@
  */
 global $polite_theme_options;
 $social_share = absint($polite_theme_options['polite-single-social-share']);
+$image = absint($polite_theme_options['polite-single-page-featured-image']);
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="post-wrap">
-        <div class="post-media">
-            <?php polite_post_thumbnail(); ?>
-        </div>
+        <?php if($image == 1 ){ ?>
+            <div class="post-media">
+                <?php polite_post_thumbnail(); ?>
+            </div>
+        <?php } ?>
         <div class="post-content">
             <div class="post-cats">
                 <?php polite_entry_meta(); ?>
