@@ -4493,19 +4493,23 @@ article{
     padding: 0;
 }
 .widget_categories ul li {
-    color: #989ea6;
+   color: #989ea6;
     margin-bottom: 10px;
-    display: table;
+    display: block;
     text-align: right;
     width: 100%;
+    position: relative;
 }
 .widget_categories ul li:last-child {
     margin-bottom: 0;
 }
 .widget_categories ul li a {
     margin-right: 4px;
-    display: table-cell;
+    display: inline-block;
     text-align: left;
+    position: absolute;
+    left: 0;
+    z-index: 1;
 }
 .widget_categories ul ul {
     margin: 10px 0 0;
@@ -5699,12 +5703,12 @@ div[class*="footer-col-"]:last-child {
     font-size: 15px;
     padding: 10px 0;
     line-height: 1.7;
-    color: rgb(51, 51, 51);
+    color: #636363;
     border-top: 1px solid #f1f1f1;
 }
 
 .site-footer a {
-    color: #d42929;
+    color: #000;
 }
 .site-footer a:hover,
 .site-footer a:focus {
@@ -5788,12 +5792,10 @@ div[class*="footer-col-"]:last-child {
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-#toTop:focus {
-    color: #4c4f53;
-}
+#toTop:focus,
 #toTop:hover {
     color: #ffffff;
-    background-color: #d42929;
+    opacity: 0.8;
 }
 #toTop:active i {
     position: relative;

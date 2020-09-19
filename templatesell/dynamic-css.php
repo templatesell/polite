@@ -27,7 +27,7 @@ if (!function_exists('polite_dynamic_css')) :
         //Primary  Background 
         if (!empty($polite_primary_color)) {
             $custom_css .= "
-            #toTop:hover,
+            #toTop,
             a.effect:before,
             .show-more,
             a.link-format,
