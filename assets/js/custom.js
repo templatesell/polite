@@ -85,10 +85,6 @@
 				},"slow");
 			});
 	  	}
-
-	  	$( "a[href*='#']" ).click(function( event ) {
-		  event.preventDefault();
-		});
 		
 	  	// Tab Navigate
 	  	$( '#primary-menu li.menu-item-has-children' ).focusin( function() {
