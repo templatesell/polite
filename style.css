@@ -2015,7 +2015,9 @@ section.slider-wrapper {
     position: relative;
     margin-bottom: 5px;
 }
-
+.slide-wrap .caption .s-cat:hover{
+    opacity: 0.8;
+}
 .slide-wrap .more-btn:before {
     content: "";
     background-color: #000;
@@ -2748,7 +2750,7 @@ a.effect:active {
 }
 .post-cats > span a:hover,
 .post-cats > span a:focus{
-    color: #d42929;
+    opacity: 0.8;
     text-decoration: underline !important;
 }
 .post-cats > span.tags-links{
@@ -3034,6 +3036,9 @@ a.link-format:hover {
 }
 .show-more i{
     margin-right: 10px;
+}
+.show-more:hover{
+    opacity: 0.8;
 }
 /**
  ## Single post page
@@ -4496,7 +4501,7 @@ article{
    color: #989ea6;
     margin-bottom: 10px;
     display: block;
-    text-align: right;
+    text-align: left;
     width: 100%;
     position: relative;
 }
@@ -4507,9 +4512,6 @@ article{
     margin-right: 4px;
     display: inline-block;
     text-align: left;
-    position: absolute;
-    left: 0;
-    z-index: 1;
 }
 .widget_categories ul ul {
     margin: 10px 0 0;

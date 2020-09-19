@@ -31,6 +31,9 @@ if (!function_exists('polite_dynamic_css')) :
             a.effect:before,
             .show-more,
             a.link-format,
+            .comment-form #submit:hover, 
+            .comment-form #submit:focus,
+            .meta_bottom .post-share a:hover,
             .tabs-nav li:before,
             .post-slider-section .s-cat,
             .sidebar-3 .widget-title:after,
@@ -50,10 +53,33 @@ if (!function_exists('polite_dynamic_css')) :
             }";
 
         }
-
         //Primary Color
         if (!empty($polite_primary_color)) {
             $custom_css .= "
+            #author:active, 
+            #email:active, 
+            #url:active, 
+            #comment:active, 
+            #author:focus, 
+            #email:focus, 
+            #url:focus, 
+            #comment:focus,
+            #author:hover, 
+            #email:hover, 
+            #url:hover, 
+            #comment:hover{
+                border-color:".$polite_primary_color.";
+            }";
+         }
+        //Primary Color
+        if (!empty($polite_primary_color)) {
+            $custom_css .= "
+            .post-cats > span i, 
+            .post-cats > span a,
+            .slide-wrap .caption .s-cat,
+            .slide-wrap .caption span a:hover,
+            .comment-form .logged-in-as a:last-child:hover, 
+            .comment-form .logged-in-as a:last-child:focus,
             .main-header a:hover, 
             .main-header a:focus, 
             .main-header a:active,
