@@ -5697,6 +5697,9 @@ div[class*="footer-col-"]:last-child {
     .footer-wrap [class*="footer-col-"]:nth-child(3){
         padding-left: 15px;
     }
+    .related-posts .show-2-related-posts{
+        width: 100%;
+    }
 }
 
 /* footer text */
