@@ -41,9 +41,7 @@ body {
 /* links */
 a {
     text-decoration: none !important;
-    outline: none !important;
     color: #4c4f53;
-
     -webkit-transition: color 0.2s ease, background-color 0.2s ease;
     -moz-transition: color 0.2s ease, background-color 0.2s ease;
     -o-transition: color 0.2s ease, background-color 0.2s ease;
@@ -51,11 +49,16 @@ a {
 }
 a:focus {
     color: #4c4f53;
-    outline: 5px auto red!important;
 
 }
 a:hover {
     color: #d42929;
+}
+a:focus,
+button:focus{
+    outline-style: dotted;
+    outline-color: gray;
+    outline-width: 1px;
 }
 
 /* H1 - H6 */
@@ -976,11 +979,6 @@ th {
     text-decoration: none;
 }
 
-.main-header a:focus,
-.main-header a:active {
-    outline: none;
-}
-
 .main-header-container {
     position: relative;
 }
@@ -1154,6 +1152,8 @@ th {
 .main-menu li:hover > ul {
     visibility: visible;
     opacity: 1;
+}
+.main-menu li:focus-within > ul{
     display: block;
 }
 .header-shadow-wrapper {
@@ -1322,7 +1322,7 @@ th {
         right: 0;
     }
     .main-menu li > ul ul {
-        top: -27px;
+        top: 0;
         left: 100%;
     }
     .main-menu li.submenu-right > ul ul {
@@ -1689,8 +1689,7 @@ div#MobileMenu {
 }
 .header-1 .main-menu{
     float: none;
-    max-width: 80%;
-    text-align: center;
+    text-align: left;
     margin: auto;
 }
 @media (min-width: 1200px){
@@ -7277,16 +7276,6 @@ div#polite-breadcrumbs {
     .caption h2 a{
         font-size: 24px;
     }
-}
-/*==============================================================
-## Tab Navigate
-================================================================*/
-#primary-menu li.menu-item-has-children.locked > ul,
-#primary-menu li.menu-item-has-children a:focus ~ ul{
-    visibility: visible;
-    opacity: 1;
-    top: 100%;
-    outline: 5px auto red!important;
 }
 
 
