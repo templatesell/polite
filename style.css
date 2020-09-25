@@ -7003,14 +7003,16 @@ div#polite-breadcrumbs {
     .right-sidebar #primary{
         float: none;
     }
-.blog.left-sidebar #primary, 
-.archive.left-sidebar #primary, 
-.page.left-sidebar #primary{
-    float: none;
-}
-.single.single-left-sidebar #primary, .single.single-right-sidebar #primary{
-    max-width: 100%;
-}
+    .blog.left-sidebar #primary, 
+    .archive.left-sidebar #primary, 
+    .page.left-sidebar #primary{
+        float: none;
+    }
+    .single.single-left-sidebar #primary, 
+    .single.single-right-sidebar #primary{
+        max-width: 100%;
+    }
+
 
 }
 
@@ -7030,12 +7032,19 @@ div#polite-breadcrumbs {
         max-width: 100%
         min-width:100%;
     }
-.blog.left-sidebar #primary, 
-.archive.left-sidebar #primary, 
-.page.left-sidebar #primary{
-    float: none;
-}
-
+    .blog.left-sidebar #primary, 
+    .archive.left-sidebar #primary, 
+    .page.left-sidebar #primary{
+        float: none;
+    }
+    .post-content{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .pull-right,
+    .pull-left{
+        float: left!important;
+    }
 }
 
 /* 720px */
@@ -7118,11 +7127,6 @@ div#polite-breadcrumbs {
     }
 
     /* comments */
-    .comment-reply-title,
-    .comments-title {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
     .comment-list li .comment-reply-title {
         padding-right: 0;
         padding-left: 0;
