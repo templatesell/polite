@@ -25,7 +25,7 @@ if (!function_exists('polite_posts_navigation')) :
                 'prev_text' => __('<i class="fa fa-angle-left"></i>', 'polite'),
                 'next_text' => __('<i class="fa fa-angle-right"></i>', 'polite'),
             ));
-            echo "<div>";
+            echo "</div>";
         } elseif ('ajax' == $polite_pagination_option) {
             $page_number = get_query_var('paged');
             if ($page_number == 0) {

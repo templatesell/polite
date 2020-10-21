@@ -30,6 +30,9 @@ Polite includes support for Infinite Scroll in Jetpack.
 * Custom pagination for numeric is made.
 
 == Changelog ==
+= 1.2.3 - October 22 2020 =
+* Fixed pagination div closing
+
 = 1.2.2 - September 25 2020 =
 * Fixed # link issues on menu
 * Make the mobile page layout wider 
