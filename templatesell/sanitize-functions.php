@@ -8,7 +8,7 @@
  * @param bool $checked Whether the checkbox is checked.
  * @return bool Whether the checkbox is checked.
  */
-function polite_sanitize_checkbox( $checked ) {
+function urbane_sanitize_checkbox( $checked ) {
 	// Boolean check.
 	return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
@@ -29,7 +29,7 @@ function polite_sanitize_checkbox( $checked ) {
  * @param WP_Customize_Setting $setting Setting instance.
  * @return string Sanitized slug if it is a valid choice; otherwise, the setting default.
  */
-function polite_sanitize_select( $input, $setting ) {
+function urbane_sanitize_select( $input, $setting ) {
 	
 	// Ensure input is a slug.
 	$input = sanitize_key( $input );
@@ -57,7 +57,7 @@ function polite_sanitize_select( $input, $setting ) {
  * @return int|string The number, if it is zero or greater and falls within the defined range; otherwise,
  *                    the setting default.
  */
-function polite_sanitize_number_range( $number, $setting ) {
+function urbane_sanitize_number_range( $number, $setting ) {
 	
 	// Ensure input is an absolute integer.
 	$number = absint( $number );
@@ -82,8 +82,8 @@ function polite_sanitize_number_range( $number, $setting ) {
  * Adds sanitization callback function: Number
  *  @since Springy 1.0.0
  */
-if (!function_exists('polite_sanitize_number')) :
-    function polite_sanitize_number($input)
+if (!function_exists('urbane_sanitize_number')) :
+    function urbane_sanitize_number($input)
     {
         if (isset($input) && is_numeric($input)) {
             return $input;

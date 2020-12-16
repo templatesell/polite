@@ -6,15 +6,15 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Polite
+ * @package Urbane
  */
-$GLOBALS['polite_theme_options'] = polite_get_options_value();
-global $polite_theme_options;
-$enable_header = absint($polite_theme_options['polite_enable_top_header']);
-$enable_menu   = absint($polite_theme_options['polite_enable_top_header_menu']);
-$enable_social = absint($polite_theme_options['polite_enable_top_header_social']);
-$offcanvas = absint($polite_theme_options['polite_enable_offcanvas']);
-$search_header = absint($polite_theme_options['polite_enable_search']);
+$GLOBALS['urbane_theme_options'] = urbane_get_options_value();
+global $urbane_theme_options;
+$enable_header = absint($urbane_theme_options['urbane_enable_top_header']);
+$enable_menu   = absint($urbane_theme_options['urbane_enable_top_header_menu']);
+$enable_social = absint($urbane_theme_options['urbane_enable_top_header_social']);
+$offcanvas = absint($urbane_theme_options['urbane_enable_offcanvas']);
+$search_header = absint($urbane_theme_options['urbane_enable_search']);
 ?>
 <?php if( 1 == $offcanvas ){ ?>
 <div class="myCanvasNav canvi-navbar">
@@ -32,7 +32,7 @@ $search_header = absint($polite_theme_options['polite_enable_search']);
 	<div class="default-widgets">
 		<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 		<div class="widget widget_categories">
-			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'polite' ); ?></h2>
+			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'urbane' ); ?></h2>
 			<ul>
 				<?php
 				wp_list_categories( array(
@@ -76,7 +76,7 @@ $search_header = absint($polite_theme_options['polite_enable_search']);
 									wp_nav_menu( array(
 										'theme_location' => 'social',
 										'menu_id'        => 'social-menu',
-										'menu_class'     => 'polite-social-menu',
+										'menu_class'     => 'urbane-social-menu',
 									) );
 								?>
 							</div>
@@ -103,10 +103,10 @@ $search_header = absint($polite_theme_options['polite_enable_search']);
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php
 				endif;
-				$polite_description = get_bloginfo( 'description', 'display' );
-				if ( $polite_description || is_customize_preview() ) :
+				$urbane_description = get_bloginfo( 'description', 'display' );
+				if ( $urbane_description || is_customize_preview() ) :
 					?>
-					<p class="site-description"><?php echo $polite_description; /* WPCS: xss ok. */ ?></p>
+					<p class="site-description"><?php echo $urbane_description; /* WPCS: xss ok. */ ?></p>
 				<?php endif; ?>
 			</div><!-- .site-logo -->
 		</div>
@@ -133,7 +133,7 @@ $search_header = absint($polite_theme_options['polite_enable_search']);
 					<div class="line-menu line-half first-line"></div>
 					<div class="line-menu"></div>
 					<div class="line-menu line-half last-line"></div>
-					<a><?php _e('Menu', 'polite'); ?></a>
+					<a><?php _e('Menu', 'urbane'); ?></a>
 				</button>
 				<div class="main-menu menu-caret">
 					<?php

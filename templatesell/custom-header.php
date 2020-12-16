@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Polite
+ * @package Urbane
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses polite_header_style()
+ * @uses urbane_header_style()
  */
-function polite_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'polite_custom_header_args', array(
+function urbane_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'urbane_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1920,
 		'height'                 => 450,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'polite_header_style',
+		'wp-head-callback'       => 'urbane_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'polite_custom_header_setup' );
+add_action( 'after_setup_theme', 'urbane_custom_header_setup' );
 
-if ( ! function_exists( 'polite_header_style' ) ) :
+if ( ! function_exists( 'urbane_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see polite_custom_header_setup().
+	 * @see urbane_custom_header_setup().
 	 */
-	function polite_header_style() {
+	function urbane_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

@@ -1,18 +1,18 @@
 <?php
 /**
- * Polite Promo Unique
- * @since Polite 1.0.0
+ * Urbane Promo Unique
+ * @since Urbane 1.0.0
  *
  * @param null
  * @return void
  *
  */
-global $polite_theme_options;
-$promo_cat = absint($polite_theme_options['polite-promo-select-category']);
+global $urbane_theme_options;
+$promo_cat = absint($urbane_theme_options['urbane-promo-select-category']);
 
 if( $promo_cat > 0 && is_home() )
 { ?>
-    <section class="polite-promo-section">
+    <section class="urbane-promo-section">
         <?php if ( is_front_page() && is_home() )
         {  ?>
             <div class="container">
@@ -38,7 +38,7 @@ if( $promo_cat > 0 && is_home() )
                                     {
                                         
                                         $image_id  = get_post_thumbnail_id();
-                                        $image_url = wp_get_attachment_image_src($image_id,'polite-promo-post',true);
+                                        $image_url = wp_get_attachment_image_src($image_id,'urbane-promo-post',true);
                                         ?>
                                         
                                         <figure>
@@ -60,8 +60,8 @@ if( $promo_cat > 0 && is_home() )
                                     <div class="post-date">
                                         <div class="entry-meta">
                                             <?php
-                                            polite_posted_by();
-                                            polite_posted_on();
+                                            urbane_posted_by();
+                                            urbane_posted_on();
                                             ?>
                                         </div><!-- .entry-meta -->
                                     </div>

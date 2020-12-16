@@ -1,14 +1,14 @@
 <?php 
 /**
- * Polite Slider Function
- * @since Polite 1.0.0
+ * Urbane Slider Function
+ * @since Urbane 1.0.0
  *
  * @param null
  * @return void
  *
  */
-global $polite_theme_options;
-$slide_id = absint($polite_theme_options['polite-select-category']);
+global $urbane_theme_options;
+$slide_id = absint($urbane_theme_options['urbane-select-category']);
         $slick_args = array(
             'slidesToShow'      => 1,
             'slidesToScroll'    => 1,
@@ -45,11 +45,11 @@ $slide_id = absint($polite_theme_options['polite-select-category']);
                     ?>
             		    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <div class="entry-meta">
-                        <?php polite_posted_on(); ?>
+                        <?php urbane_posted_on(); ?>
                     </div>
                     <div class="post-excerpt entry-content">
                       <?php the_excerpt(); ?>
-                        <a class="more-btn" href="<?php the_permalink(); ?>"><?php _e('Read More', 'polite'); ?></a>
+                        <a class="more-btn" href="<?php the_permalink(); ?>"><?php _e('Read More', 'urbane'); ?></a>
                     </div>
             	</div>
             </div>

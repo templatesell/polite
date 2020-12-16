@@ -6,12 +6,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Polite
+ * @package Urbane
  */
-$GLOBALS['polite_theme_options'] = polite_get_options_value();
-global $polite_theme_options;
-$enable_slider = absint($polite_theme_options['polite_enable_slider']);
-$enable_box = $polite_theme_options['polite_enable_promo'];
+$GLOBALS['urbane_theme_options'] = urbane_get_options_value();
+global $urbane_theme_options;
+$enable_slider = absint($urbane_theme_options['urbane_enable_slider']);
+$enable_box = $urbane_theme_options['urbane_enable_promo'];
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -32,15 +32,15 @@ if ( function_exists( 'wp_body_open' ) ) {
 }
 ?>
 <div id="page" class="site ">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'polite' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'urbane' ); ?></a>
 
 	<?php
     /**
-     * Hook - polite_action_header.
+     * Hook - urbane_action_header.
      *
-     * @hooked polite_add_main_header - 10
+     * @hooked urbane_add_main_header - 10
      */
-    do_action( 'polite_action_header' );
+    do_action( 'urbane_action_header' );
     ?>
 
 	 <?php if ($enable_slider == 1 && (is_home() || is_front_page())) { ?>
@@ -49,7 +49,7 @@ if ( function_exists( 'wp_body_open' ) ) {
             /*
             * Slider Section Hook
             */
-                do_action('polite_action_slider');
+                do_action('urbane_action_slider');
             ?>
         </section>
     <?php } ?>
@@ -60,7 +60,7 @@ if ( function_exists( 'wp_body_open' ) ) {
             /*
             * Boxes Section Hook
             */
-            do_action('polite_action_boxes');
+            do_action('urbane_action_boxes');
             ?>
         </section>
     <?php } ?>

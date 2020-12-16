@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Polite
+ * @package Urbane
  */
 get_header();
 ?>
@@ -14,7 +14,7 @@ get_header();
 			<div class="breadcrumbs-wrap">
 				<?php 
 				// Breadcrumb hook
-				do_action('polite_breadcrumb_options_hook'); ?> 
+				do_action('urbane_breadcrumb_options_hook'); ?> 
 			</div>
 			<div id="primary" class="col-md-8 content-area">
 				<main id="main" class="site-main">
@@ -42,12 +42,12 @@ get_header();
         	<div class="col-sm-12">
 				<?php 
 				/**
-				 * polite_related_posts hook
-				 * @since Polite 1.0.0
+				 * urbane_related_posts hook
+				 * @since Urbane 1.0.0
 				 *
-				 * @hooked polite_related_posts -  10
+				 * @hooked urbane_related_posts -  10
 				 */
-				do_action( 'polite_related_posts' ,get_the_ID() );
+				do_action( 'urbane_related_posts' ,get_the_ID() );
 				?>
 			</div>
 		</div>

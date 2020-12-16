@@ -1,4 +1,4 @@
-=== Polite ===
+=== Urbane ===
 
 Contributors: templatesell
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, blog, news
@@ -9,7 +9,7 @@ Stable tag: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A perfect theme for blog and magazine site. With masonry layout and multiple blog page layout, this theme is the awesome and minimal theme. This theme has search option, off-canvas sidebar, multiple sidebar options, footer options, featured slider, promo boxed, footer widgets and many more. Besides that, this theme comes with added custom widgets for author information, featured posts, social icons, etc. It comes with primary color option to change the whole site color with a single click. More Details: https://www.templatesell.com/item/polite-minimal-blog-wordpress-theme/
+A perfect theme for blog and magazine site. With masonry layout and multiple blog page layout, this theme is the awesome and minimal theme. This theme has search option, off-canvas sidebar, multiple sidebar options, footer options, featured slider, promo boxed, footer widgets and many more. Besides that, this theme comes with added custom widgets for author information, featured posts, social icons, etc. It comes with primary color option to change the whole site color with a single click. More Details: https://www.templatesell.com/item/urbane-minimal-blog-wordpress-theme/
 
 == Description ==
 
@@ -24,7 +24,7 @@ A perfect theme for blog and magazine site. With masonry layout and multiple blo
 
 = Does this theme support any plugins? =
 
-Polite includes support for Infinite Scroll in Jetpack.
+Urbane includes support for Infinite Scroll in Jetpack.
 
 == Notes ==
 * Custom pagination for numeric is made.
@@ -153,8 +153,8 @@ Polite includes support for Infinite Scroll in Jetpack.
 
 == Credits ==
 
-Polite is free WordPress theme by, Template Sell.
-Polite is distributed under the terms of the GNU GPL v2 or later.
+Urbane is free WordPress theme by, Template Sell.
+Urbane is distributed under the terms of the GNU GPL v2 or later.
 
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)

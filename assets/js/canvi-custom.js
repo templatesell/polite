@@ -5,7 +5,7 @@
     "use strict";
 
     jQuery(document).ready(function() {
- 	var polite_t = new Canvi({
+ 	var urbane_t = new Canvi({
     content: ".js-canvi-content",
     isDebug: !1,
     //navbar: ".myCanvasNav",
@@ -28,7 +28,7 @@
 })
 
 $('.closebtn').on('click', function(){
-        polite_t.close();
+        urbane_t.close();
     });
 })
 })(jQuery);

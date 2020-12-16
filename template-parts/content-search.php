@@ -4,17 +4,17 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Polite
+ * @package Urbane
  */
-global $polite_theme_options;
-$masonry = esc_attr($polite_theme_options['polite-column-blog-page']);
-$image_location = esc_attr($polite_theme_options['polite-blog-image-layout']);
+global $urbane_theme_options;
+$masonry = esc_attr($urbane_theme_options['urbane-column-blog-page']);
+$image_location = esc_attr($urbane_theme_options['urbane-blog-image-layout']);
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class($masonry); ?> >
     <div class="post-wrap <?php echo esc_attr($image_location); ?>">
         <?php if(has_post_thumbnail()) { ?>
             <div class="post-media">
-                <?php polite_post_thumbnail(); ?>
+                <?php urbane_post_thumbnail(); ?>
             </div>
         <?php } ?>
         <div class="post-content">
@@ -23,8 +23,8 @@ $image_location = esc_attr($polite_theme_options['polite-blog-image-layout']);
                     <?php if ('post' === get_post_type()) : ?>
                         <div class="entry-meta">
                             <?php
-                            polite_posted_on();
-                            polite_posted_by();
+                            urbane_posted_on();
+                            urbane_posted_by();
                             ?>
                         </div><!-- .entry-meta -->
                     <?php endif; ?>
@@ -36,7 +36,7 @@ $image_location = esc_attr($polite_theme_options['polite-blog-image-layout']);
             </div><!-- .entry-summary -->
 
             <footer class="post-footer entry-footer">
-                <?php do_action( 'polite_social_sharing' ,get_the_ID() );?>
+                <?php do_action( 'urbane_social_sharing' ,get_the_ID() );?>
             </footer><!-- .entry-footer -->
         </div>
     </div>

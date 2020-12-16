@@ -4,26 +4,26 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Polite
+ * @package Urbane
  */
-global $polite_theme_options;
-$show_content_from = esc_attr($polite_theme_options['polite-content-show-from']);
-$read_more = esc_html($polite_theme_options['polite-read-more-text']);
-$masonry = esc_attr($polite_theme_options['polite-column-blog-page']);
-$image_location = esc_attr($polite_theme_options['polite-blog-image-layout']);
-$social_share = absint($polite_theme_options['polite-show-hide-share']);
-$date = absint($polite_theme_options['polite-show-hide-date']);
-$category = absint($polite_theme_options['polite-show-hide-category']);
-$author = absint($polite_theme_options['polite-show-hide-author']);
+global $urbane_theme_options;
+$show_content_from = esc_attr($urbane_theme_options['urbane-content-show-from']);
+$read_more = esc_html($urbane_theme_options['urbane-read-more-text']);
+$masonry = esc_attr($urbane_theme_options['urbane-column-blog-page']);
+$image_location = esc_attr($urbane_theme_options['urbane-blog-image-layout']);
+$social_share = absint($urbane_theme_options['urbane-show-hide-share']);
+$date = absint($urbane_theme_options['urbane-show-hide-date']);
+$category = absint($urbane_theme_options['urbane-show-hide-category']);
+$author = absint($urbane_theme_options['urbane-show-hide-author']);
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class($masonry); ?>>
     <div class="post-wrap <?php echo esc_attr($image_location); ?>">
         <?php if(has_post_thumbnail()) { ?>
             <div class="post-media">
-                <?php polite_post_thumbnail(); ?>
+                <?php urbane_post_thumbnail(); ?>
                 <?php 
                 if( 1 == $social_share ){
-                    do_action( 'polite_social_sharing' ,get_the_ID() );
+                    do_action( 'urbane_social_sharing' ,get_the_ID() );
                 }
                 ?>
             </div>
@@ -31,7 +31,7 @@ $author = absint($polite_theme_options['polite-show-hide-author']);
         <div class="post-content">
             <?php if($category == 1 ){ ?>
                 <div class="post-cats">
-                    <?php polite_entry_meta(); ?>
+                    <?php urbane_entry_meta(); ?>
                 </div>
             <?php } ?>
             <div class="post_title">
@@ -55,7 +55,7 @@ $author = absint($polite_theme_options['polite-show-hide-author']);
                     }
                 }
                 wp_link_pages(array(
-                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'polite'),
+                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'urbane'),
                     'after' => '</div>',
                 ));
                 ?>
@@ -75,10 +75,10 @@ $author = absint($polite_theme_options['polite-show-hide-author']);
                         <div class="entry-meta">
                             <?php
                             if($date == 1 ){
-                                polite_posted_on();
+                                urbane_posted_on();
                             }
                             if($author == 1 ){
-                                polite_posted_by();
+                                urbane_posted_by();
                             }
                             ?>
                         </div><!-- .entry-meta -->

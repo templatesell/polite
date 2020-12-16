@@ -1,9 +1,9 @@
 <?php
 /* Theme Options Panel */
-	    $wp_customize->add_panel( 'polite_panel', array(
+	    $wp_customize->add_panel( 'urbane_panel', array(
 	        'priority' => 30,
 	        'capability' => 'edit_theme_options',
-	        'title' => __( 'Polite Theme Options', 'polite' ),
+	        'title' => __( 'Urbane Theme Options', 'urbane' ),
 ) );
 
 /* Customizer Options */

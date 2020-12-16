@@ -3,22 +3,22 @@
  * Template part for displaying posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- * @package Polite
+ * @package Urbane
  */
-global $polite_theme_options;
-$social_share = absint($polite_theme_options['polite-single-social-share']);
-$image = absint($polite_theme_options['polite-single-page-featured-image']);
+global $urbane_theme_options;
+$social_share = absint($urbane_theme_options['urbane-single-social-share']);
+$image = absint($urbane_theme_options['urbane-single-page-featured-image']);
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="post-wrap">
         <?php if($image == 1 ){ ?>
             <div class="post-media">
-                <?php polite_post_thumbnail(); ?>
+                <?php urbane_post_thumbnail(); ?>
             </div>
         <?php } ?>
         <div class="post-content">
             <div class="post-cats">
-                <?php polite_entry_meta(); ?>
+                <?php urbane_entry_meta(); ?>
             </div>
             <?php
             if (is_singular()) :
@@ -33,8 +33,8 @@ $image = absint($polite_theme_options['polite-single-page-featured-image']);
                     ?>
                     <div class="entry-meta">
                         <?php
-                        polite_posted_on();
-                        polite_posted_by();
+                        urbane_posted_on();
+                        urbane_posted_by();
                         ?>
                     </div><!-- .entry-meta -->
                 <?php endif; ?>
@@ -45,7 +45,7 @@ $image = absint($polite_theme_options['polite-single-page-featured-image']);
                 the_content(sprintf(
                     wp_kses(
                     /* translators: %s: Name of current post. Only visible to screen readers */
-                        __('Continue reading<span class="screen-reader-text"> "%s"</span>', 'polite'),
+                        __('Continue reading<span class="screen-reader-text"> "%s"</span>', 'urbane'),
                         array(
                             'span' => array(
                                 'class' => array(),
@@ -56,7 +56,7 @@ $image = absint($polite_theme_options['polite-single-page-featured-image']);
                 
                 ));
                 wp_link_pages(array(
-                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'polite'),
+                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'urbane'),
                     'after' => '</div>',
                 
                 ));
@@ -65,7 +65,7 @@ $image = absint($polite_theme_options['polite-single-page-featured-image']);
             <footer class="post-footer entry-footer">
                 <?php 
                 if( 1 == $social_share ){
-                    do_action( 'polite_social_sharing' ,get_the_ID() );
+                    do_action( 'urbane_social_sharing' ,get_the_ID() );
                 }
                 ?>
             </footer><!-- .entry-footer -->
