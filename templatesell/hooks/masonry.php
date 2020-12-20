@@ -2,27 +2,27 @@
 /**
  * Masonry Start Class and Id functions
  *
- * @since Urbane 1.0.0
+ * @since Polite 1.0.0
  *
  */
-if (!function_exists('urbane_masonry_start')) :
-    function urbane_masonry_start()
+if (!function_exists('polite_masonry_start')) :
+    function polite_masonry_start()
     { ?>
         <div class="masonry-start"><div id="masonry-loop">
         
         <?php
     }
 endif;
-add_action('urbane_masonry_start_hook', 'urbane_masonry_start', 10, 1);
+add_action('polite_masonry_start_hook', 'polite_masonry_start', 10, 1);
 
 /**
  * Masonry end Div
  *
- * @since Urbane 1.0.0
+ * @since Polite 1.0.0
  *
  */
-if (!function_exists('urbane_masonry_end')) :
-    function urbane_masonry_end()
+if (!function_exists('polite_masonry_end')) :
+    function polite_masonry_end()
     { ?>
         </div>
         </div>
@@ -30,4 +30,4 @@ if (!function_exists('urbane_masonry_end')) :
         <?php
     }
 endif;
-add_action('urbane_masonry_end_hook', 'urbane_masonry_end', 10, 1);
+add_action('polite_masonry_end_hook', 'polite_masonry_end', 10, 1);

@@ -4,13 +4,13 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Urbane
+ * @package Polite
  */
-if ( ! function_exists( 'urbane_posted_on' ) ) :
+if ( ! function_exists( 'polite_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
-	function urbane_posted_on() {		
+	function polite_posted_on() {		
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -27,43 +27,43 @@ if ( ! function_exists( 'urbane_posted_on' ) ) :
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
 	$byline = sprintf(
-            esc_html_x('By %s', 'post author', 'urbane'),
+            esc_html_x('By %s', 'post author', 'polite'),
             '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
         );
         echo '<span class="posted-on">' . $posted_on . '</span>';
 	}
 endif;
 
-if ( ! function_exists( 'urbane_posted_by' ) ) :
+if ( ! function_exists( 'polite_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
-	function urbane_posted_by() {
+	function polite_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'urbane' ),
+			esc_html_x( 'by %s', 'post author', 'polite' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
         echo '<span class="post_by"> ' . $byline . '</span>'; // WPCS: XSS OK.
 	}
 endif;
 
-if ( ! function_exists( 'urbane_entry_meta' ) ) :
+if ( ! function_exists( 'polite_entry_meta' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function urbane_entry_meta() {
+	function polite_entry_meta() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'urbane' ) );
+		$categories_list = get_the_category_list( esc_html__( ', ', 'polite' ) );
 
 		if ( $categories_list ) {
 			echo '<span class="cat-links">' . $categories_list . '</span>';
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'urbane' ) );
+		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'polite' ) );
 		if ( $tags_list && is_singular() ) {
 			printf( '<span class="tags-links">' . '<i class="fa fa-tag"></i>' . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
@@ -75,16 +75,16 @@ endif;
 /**
  * Post Thumbnail
  *
- *  @since Urbane 1.0.0
+ *  @since Polite 1.0.0
  */
-if (!function_exists('urbane_post_thumbnail')) :
+if (!function_exists('polite_post_thumbnail')) :
     /**
      * Displays an optional post thumbnail.
      *
      * Wraps the post thumbnail in an anchor element on index views, or a div
      * element when on single views.
      */
-    function urbane_post_thumbnail()
+    function polite_post_thumbnail()
     {
         if (post_password_required() || is_attachment() || !has_post_thumbnail()) {
             return;
@@ -100,8 +100,8 @@ if (!function_exists('urbane_post_thumbnail')) :
         <?php else : ?>
             <?php
             $image_size = 'large';
-            global $urbane_theme_options;
-            $image_location = esc_html( $urbane_theme_options['urbane-blog-image-layout'] );
+            global $polite_theme_options;
+            $image_location = esc_html( $polite_theme_options['polite-blog-image-layout'] );
             if( $image_location == 'full-image' ){
                 $image_size = 'full';
             }if($image_location == 'left-image'){

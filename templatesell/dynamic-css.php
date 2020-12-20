@@ -2,30 +2,30 @@
 /**
  * Dynamic css
  *
- * @since Urbane 1.0.0
+ * @since Polite 1.0.0
  *
  * @param null
  * @return null
  *
  */
-if (!function_exists('urbane_dynamic_css')) :
+if (!function_exists('polite_dynamic_css')) :
 
-    function urbane_dynamic_css()
+    function polite_dynamic_css()
     {
-        global $urbane_theme_options;
+        global $polite_theme_options;
 
         /* Color Options Options */
-        $urbane_primary_color              = esc_attr($urbane_theme_options['urbane_primary_color']);
-        $urbane_logo_width              = absint($urbane_theme_options['urbane_logo_width_option']);
+        $polite_primary_color              = esc_attr($polite_theme_options['polite_primary_color']);
+        $polite_logo_width              = absint($polite_theme_options['polite_logo_width_option']);
         
-        $urbane_header_overlay  = esc_attr($urbane_theme_options['urbane_slider_overlay_color']);
-        $urbane_header_transparent  = esc_attr($urbane_theme_options['urbane_slider_overlay_transparent']);
-        $urbane_header_min_height              = absint($urbane_theme_options['urbane_header_image_height']);
+        $polite_header_overlay  = esc_attr($polite_theme_options['polite_slider_overlay_color']);
+        $polite_header_transparent  = esc_attr($polite_theme_options['polite_slider_overlay_transparent']);
+        $polite_header_min_height              = absint($polite_theme_options['polite_header_image_height']);
 
         $custom_css = '';
 
         //Primary  Background 
-        if (!empty($urbane_primary_color)) {
+        if (!empty($polite_primary_color)) {
             $custom_css .= "
             #toTop,
             a.effect:before,
@@ -48,13 +48,13 @@ if (!function_exists('urbane_dynamic_css')) :
             article.format-gallery .post-content .post-format::after, 
             article.format-audio .post-content .post-format::after, 
             article.format-quote .post-content .post-format::after{ 
-                background-color: ". $urbane_primary_color."; 
-                border-color: ".$urbane_primary_color.";
+                background-color: ". $polite_primary_color."; 
+                border-color: ".$polite_primary_color.";
             }";
 
         }
         //Primary Color
-        if (!empty($urbane_primary_color)) {
+        if (!empty($polite_primary_color)) {
             $custom_css .= "
             #author:active, 
             #email:active, 
@@ -68,11 +68,11 @@ if (!function_exists('urbane_dynamic_css')) :
             #email:hover, 
             #url:hover, 
             #comment:hover{
-                border-color:".$urbane_primary_color.";
+                border-color:".$polite_primary_color.";
             }";
          }
         //Primary Color
-        if (!empty($urbane_primary_color)) {
+        if (!empty($polite_primary_color)) {
             $custom_css .= "
             .post-cats > span i, 
             .post-cats > span a,
@@ -111,43 +111,43 @@ if (!function_exists('urbane_dynamic_css')) :
             .footer-social-links a:focus,
             .site-footer a:hover, 
             .site-footer a:focus, .content-area p a{ 
-                color : ". $urbane_primary_color."; 
+                color : ". $polite_primary_color."; 
             }";
         }
 
         //Logo Width
-        if (!empty($urbane_logo_width)) {
+        if (!empty($polite_logo_width)) {
             $custom_css .= "
             .header-1 .head_one .logo{ 
-                max-width : ". $urbane_logo_width."px; 
+                max-width : ". $polite_logo_width."px; 
             }";
         }
 
         //Header Overlay
-        if (!empty($urbane_header_overlay)) {
+        if (!empty($polite_header_overlay)) {
             $custom_css .= "
             .header-image:before { 
-                background-color : ". $urbane_header_overlay."; 
+                background-color : ". $polite_header_overlay."; 
             }";
         }
 
         //Header Tranparent
-        if (!empty($urbane_header_transparent)) {
+        if (!empty($polite_header_transparent)) {
             $custom_css .= "
             .header-image:before { 
-                opacity : ". $urbane_header_transparent."; 
+                opacity : ". $polite_header_transparent."; 
             }";
         }
 
         //Header Min Height
-        if (!empty($urbane_header_min_height)) {
+        if (!empty($polite_header_min_height)) {
             $custom_css .= "
             .header-1 .header-image .head_one { 
-                min-height : ". $urbane_header_min_height."px; 
+                min-height : ". $polite_header_min_height."px; 
             }";
         }
 
-        wp_add_inline_style('urbane-style', $custom_css);
+        wp_add_inline_style('polite-style', $custom_css);
     }
 endif;
-add_action('wp_enqueue_scripts', 'urbane_dynamic_css', 99);
+add_action('wp_enqueue_scripts', 'polite_dynamic_css', 99);

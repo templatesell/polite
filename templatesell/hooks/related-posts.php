@@ -2,20 +2,20 @@
 /**
  * Display related posts from same category
  *
- * @since Urbane 1.0.0
+ * @since Polite 1.0.0
  *
  * @param int $post_id
  * @return void
  *
  */
-if (!function_exists('urbane_related_post')) :
+if (!function_exists('polite_related_post')) :
     
-    function urbane_related_post($post_id)
+    function polite_related_post($post_id)
     {
         
-        global $urbane_theme_options;
-        $title = esc_html($urbane_theme_options['urbane-single-page-related-posts-title']);
-        if (0 == $urbane_theme_options['urbane-single-page-related-posts']) {
+        global $polite_theme_options;
+        $title = esc_html($polite_theme_options['polite-single-page-related-posts-title']);
+        if (0 == $polite_theme_options['polite-single-page-related-posts']) {
             return;
         }
         $categories = get_the_category($post_id);
@@ -35,7 +35,7 @@ if (!function_exists('urbane_related_post')) :
                     </h2>
                     <div class="related-posts-list">
                         <?php
-                        $urbane_cat_post_args = array(
+                        $polite_cat_post_args = array(
                             'category__in' => $category_ids,
                             'post__not_in' => array($post_id),
                             'post_type' => 'post',
@@ -43,9 +43,9 @@ if (!function_exists('urbane_related_post')) :
                             'post_status' => 'publish',
                             'ignore_sticky_posts' => true
                         );
-                        $urbane_featured_query = new WP_Query($urbane_cat_post_args);
+                        $polite_featured_query = new WP_Query($polite_cat_post_args);
                         
-                        while ($urbane_featured_query->have_posts()) : $urbane_featured_query->the_post();
+                        while ($polite_featured_query->have_posts()) : $polite_featured_query->the_post();
                             ?>
                             <div class="show-2-related-posts">
                                 <div class="post-wrap">
@@ -54,7 +54,7 @@ if (!function_exists('urbane_related_post')) :
                                         ?>
                                         <figure class="post-media">
                                             <a href="<?php the_permalink() ?>">
-                                                <?php the_post_thumbnail('urbane-related-post-thumbnails'); ?>
+                                                <?php the_post_thumbnail('polite-related-post-thumbnails'); ?>
                                             </a>
                                         </figure>
                                         <?php
@@ -80,4 +80,4 @@ if (!function_exists('urbane_related_post')) :
         }
     }
 endif;
-add_action('urbane_related_posts', 'urbane_related_post', 10, 1);
+add_action('polite_related_posts', 'polite_related_post', 10, 1);

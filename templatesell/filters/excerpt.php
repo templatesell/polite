@@ -4,52 +4,52 @@
  *
  * @since 1.0.0
  */
-if (!function_exists('urbane_excerpt_more')) :
-    function urbane_excerpt_more($more)
+if (!function_exists('polite_excerpt_more')) :
+    function polite_excerpt_more($more)
     {
         if (!is_admin()) {
             return '';
         }
     }
 endif;
-add_filter('excerpt_more', 'urbane_excerpt_more');
+add_filter('excerpt_more', 'polite_excerpt_more');
 
 /**
  * Filter to change excerpt lenght size
  *
  * @since 1.0.0
  */
-if (!function_exists('urbane_alter_excerpt')) :
-    function urbane_alter_excerpt($length)
+if (!function_exists('polite_alter_excerpt')) :
+    function polite_alter_excerpt($length)
     {
         if (is_admin()) {
             return $length;
         }
-        global $urbane_theme_options;
-        $excerpt_length = absint($urbane_theme_options['urbane-excerpt-length']);
+        global $polite_theme_options;
+        $excerpt_length = absint($polite_theme_options['polite-excerpt-length']);
         if (!empty($excerpt_length)) {
             return $excerpt_length;
         }
         return 50;
     }
 endif;
-add_filter('excerpt_length', 'urbane_alter_excerpt');
+add_filter('excerpt_length', 'polite_alter_excerpt');
 
 /**
  * Exclude category in blog page
  *
- * @since Urbane 1.0.0
+ * @since Polite 1.0.0
  *
  * @param null
  * @return int
  */
-if (!function_exists('urbane_exclude_category_in_blog_page')) :
-    function urbane_exclude_category_in_blog_page($query)
+if (!function_exists('polite_exclude_category_in_blog_page')) :
+    function polite_exclude_category_in_blog_page($query)
     {
         if ($query->is_home && $query->is_main_query()) {
-            $GLOBALS['urbane_theme_options'] = urbane_get_options_value();
-            global $urbane_theme_options;
-            $blog_catid = esc_attr($urbane_theme_options['urbane-blog-exclude-category']);
+            $GLOBALS['polite_theme_options'] = polite_get_options_value();
+            global $polite_theme_options;
+            $blog_catid = esc_attr($polite_theme_options['polite-blog-exclude-category']);
             $exclude_categories = $blog_catid;
             if (!empty($exclude_categories)) {
                 $cats = explode(',', $exclude_categories);
@@ -65,4 +65,4 @@ if (!function_exists('urbane_exclude_category_in_blog_page')) :
         return $query;
     }
 endif;
-add_filter('pre_get_posts', 'urbane_exclude_category_in_blog_page');
+add_filter('pre_get_posts', 'polite_exclude_category_in_blog_page');
