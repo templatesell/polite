@@ -15,6 +15,8 @@ $enable_menu   = absint($polite_theme_options['polite_enable_top_header_menu']);
 $enable_social = absint($polite_theme_options['polite_enable_top_header_social']);
 $offcanvas = absint($polite_theme_options['polite_enable_offcanvas']);
 $search_header = absint($polite_theme_options['polite_enable_search']);
+$menu_text_mobile = esc_html($polite_theme_options['polite_mobile_menu_text']);
+
 ?>
 <?php if( 1 == $offcanvas ){ ?>
 <div class="myCanvasNav canvi-navbar">
@@ -133,7 +135,7 @@ $search_header = absint($polite_theme_options['polite_enable_search']);
 					<div class="line-menu line-half first-line"></div>
 					<div class="line-menu"></div>
 					<div class="line-menu line-half last-line"></div>
-					<a><?php _e('Menu', 'polite'); ?></a>
+					<a><?php echo $menu_text_mobile; ?></a>
 				</button>
 				<div class="main-menu menu-caret">
 					<?php

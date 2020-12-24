@@ -29,6 +29,10 @@ if ( !function_exists('polite_default_theme_options_values') ) :
             'polite_enable_offcanvas'  => 0,
             'polite_enable_search'  => 0,
 
+            /*Menu Options*/
+            'polite_mobile_menu_text'  => esc_html__('Menu','polite'),
+            'polite_mobile_menu_option'=> 'menu-text',
+
             /*Colors Options*/
             'polite_primary_color'              => '#d42929',
 
