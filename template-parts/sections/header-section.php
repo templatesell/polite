@@ -132,10 +132,8 @@ $menu_text_mobile = esc_html($polite_theme_options['polite_mobile_menu_text']);
 				<?php } ?>
 
 				<button class="bar-menu">
-					<div class="line-menu line-half first-line"></div>
-					<div class="line-menu"></div>
-					<div class="line-menu line-half last-line"></div>
-					<a><?php echo $menu_text_mobile; ?></a>
+					<span class="berger"><span></span></span>
+					<span><?php echo $menu_text_mobile; ?></span>
 				</button>
 				<div class="main-menu menu-caret">
 					<?php

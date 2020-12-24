@@ -1065,7 +1065,30 @@ th {
     -o-transform: rotate(-90deg) translateX(-3px);
     transform: rotate(-90deg) translateX(-3px);
 }
-
+.berger{
+    display: block;
+    width: 20px;
+    padding: 21px 0;
+    margin: 0;
+    float: left;
+    position: relative;
+    z-index: 2;
+    border: none;
+    margin: 0 5px;
+}
+.berger:before,
+.berger:after{
+    content: '';
+    display: block;
+    background: #333;
+    height: 2px;
+}
+.berger span{
+    background: #333;
+    display: block;
+    height: 2px;
+    margin: 6px 0;
+}
 .main-menu > ul {
     display: none;
     padding: 0 0 20px;
@@ -1556,7 +1579,7 @@ th {
 
 .mobile-menu {
     display: block;
-    width: 20px;
+    width: 22px;
     padding: 21px 0;
     margin: 0;
     float: left;
@@ -1571,6 +1594,7 @@ th {
     display: block;
     background: #333;
     height: 2px;
+    width: 18px;
 }
 .mobile-menu span {
     background: #333;
@@ -1723,7 +1747,7 @@ div#MobileMenu {
         right: auto;
         margin: auto;
         top: auto;
-        line-height: 68px;
+        line-height: 60px;
         display: block;
         text-align: center;
         cursor: pointer;
