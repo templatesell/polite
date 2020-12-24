@@ -1,5 +1,6 @@
 <?php
 /*Promo Section Options*/
+$GLOBALS['polite_theme_options'] = polite_get_options_value();
 
 $wp_customize->add_section( 'polite_promo_section', array(
     'priority'       => 20,

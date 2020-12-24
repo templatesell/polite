@@ -1,5 +1,6 @@
 <?php
 /*Slider Options*/
+$GLOBALS['polite_theme_options'] = polite_get_options_value();
 
 $wp_customize->add_section( 'polite_slider_section', array(
    'priority'       => 20,

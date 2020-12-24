@@ -1,4 +1,6 @@
 <?php
+$GLOBALS['polite_theme_options'] = polite_get_options_value();
+
 /*Top Header Options*/
 $wp_customize->add_section( 'polite_top_header_section', array(
    'priority'       => 20,

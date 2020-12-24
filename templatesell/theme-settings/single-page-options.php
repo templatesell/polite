@@ -1,4 +1,6 @@
 <?php
+$GLOBALS['polite_theme_options'] = polite_get_options_value();
+
 /*Single Page Options*/
 $wp_customize->add_section('polite_single_page_section', array(
     'priority' => 20,
