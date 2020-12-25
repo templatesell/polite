@@ -1715,6 +1715,7 @@ div#MobileMenu {
 }
 .header-1 .main-menu{
     margin: auto;
+    text-align: center;
 }
 .is-canvi-ready .main-menu{
     text-align: center;
