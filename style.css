@@ -965,6 +965,8 @@ th {
 
 .main-header ul {
     margin-bottom: inherit;
+    width: 100%;
+    margin: 0;
 }
 
 .main-header img {
@@ -1567,6 +1569,10 @@ th {
 
 }
 @media (max-width: 991px) {
+    .main-menu > ul{
+        text-align: left;
+        float: left;
+    }
     .main-menu > ul > li > a {
         line-height: normal!important;
     }
@@ -1717,9 +1723,6 @@ div#MobileMenu {
     margin: auto;
     text-align: center;
 }
-.is-canvi-ready .main-menu{
-    text-align: center;
-}
 @media (min-width: 1200px){
     .header-1 .main-menu {
         float: none;
@@ -1750,15 +1753,13 @@ div#MobileMenu {
         position: relative;
         right: auto;
         top: auto;
-        line-height: 60px;
+        line-height: 65px;
         display: block;
         text-align: center;
         cursor: pointer;
         background: none;
-        border: none
-    }
-    .is-canvi-ready .bar-menu{
-        margin: auto;
+        border: none;
+        margin:auto;
     }
     .header-1 .header-image .head_one{
         border: 0;
