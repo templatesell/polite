@@ -1673,6 +1673,9 @@ div#MobileMenu {
 .main-header.header-image .logo h1 a{
     color: #fff;
 }
+.header-image .berger:before, 
+.header-image .berger:after,
+.header-image .berger span,
 .header-image .mobile-menu:before,
 .header-image .mobile-menu:after,
 .header-image .mobile-menu span{
