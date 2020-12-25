@@ -1258,7 +1258,6 @@ th {
         display: none;
     }
     .main-menu {
-        float: right;
         clear: inherit;
     }
     .main-menu > ul {
@@ -1274,7 +1273,7 @@ th {
     }
     .main-menu > ul > li > a {
         position: relative;
-        line-height: 86px;
+        line-height: 60px;
         font-size: 13px;
         text-transform: uppercase;
         letter-spacing: 0.8px;
@@ -1712,18 +1711,17 @@ div#MobileMenu {
     display: none;
 }
 .header-1 .main-menu{
-    float: none;
-    text-align: left;
     margin: auto;
+}
+.is-canvi-ready .main-menu{
+    text-align: center;
 }
 @media (min-width: 1200px){
     .header-1 .main-menu {
         float: none;
 
     }
-    .is-canvi-ready .main-menu{
-        text-align: center;
-    }
+    
     .header-1 .main-menu > ul > li > a {
         line-height: 60px;
     }
