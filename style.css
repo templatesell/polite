@@ -1719,8 +1719,10 @@ div#MobileMenu {
 @media (min-width: 1200px){
     .header-1 .main-menu {
         float: none;
-        text-align: center;
 
+    }
+    .is-canvi-ready .main-menu{
+        text-align: center;
     }
     .header-1 .main-menu > ul > li > a {
         line-height: 60px;
@@ -1745,7 +1747,6 @@ div#MobileMenu {
         left: auto;
         position: relative;
         right: auto;
-        margin: auto;
         top: auto;
         line-height: 60px;
         display: block;
@@ -1753,6 +1754,9 @@ div#MobileMenu {
         cursor: pointer;
         background: none;
         border: none
+    }
+    .is-canvi-ready .bar-menu{
+        margin: auto;
     }
     .header-1 .header-image .head_one{
         border: 0;
