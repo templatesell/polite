@@ -70,7 +70,7 @@ if ( !function_exists('polite_default_theme_options_values') ) :
             'polite-enable-sticky-sidebar' => 0,
 
             /*Footer Section*/
-            'polite-footer-copyright'  => esc_html__('Copyright All Right Reserved 2020','polite'),
+            'polite-footer-copyright'  => esc_html__('Copyright All Rights Reserved 2021','polite'),
 
             /*Breadcrumb Options*/
             'polite-extra-breadcrumb' => 1,
