@@ -47,7 +47,15 @@ get_header();
 
 						/* Masonry end Section */
 						do_action('polite_masonry_end_hook');
-						
+
+						/**
+			             * polite_action_navigation hook
+			             * @since Polite 1.0.0
+			             *
+			             * @hooked polite_action_navigation -  10
+			             */
+						do_action( 'polite_action_navigation');
+							
 						else :
 
 						get_template_part( 'template-parts/content', 'none' );
