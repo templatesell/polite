@@ -6,8 +6,19 @@ if (!function_exists('polite_breadcrumb_options')) :
     function polite_breadcrumb_options()
     {
         global $polite_theme_options;
-        if (1 == $polite_theme_options['polite-extra-breadcrumb']) {
+        $breadcrumbs = absint($polite_theme_options['polite-extra-breadcrumb']);
+        $breadcrumb_from = esc_attr($polite_theme_options['polite-breadcrumb-selection-option']);        
+
+        if ( $breadcrumbs == 1 && $breadcrumb_from == 'theme' ) {
             polite_breadcrumbs();
+        }elseif($breadcrumbs == 1 &&  $breadcrumb_from == 'yoast' && (function_exists('yoast_breadcrumb'))){
+            yoast_breadcrumb();
+        }elseif($breadcrumbs == 1 && 'rankmath' == $breadcrumb_from && (function_exists('rank_math_the_breadcrumbs'))) {
+          rank_math_the_breadcrumbs();
+        }elseif($breadcrumbs == 1 && 'navxt' == $breadcrumb_from && (function_exists('bcn_display'))){
+            bcn_display();
+        }else{
+            //do nothing
         }
     }
 endif;

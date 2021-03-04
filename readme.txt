@@ -30,6 +30,10 @@ Polite includes support for Infinite Scroll in Jetpack.
 * Custom pagination for numeric is made.
 
 == Changelog ==
+= 1.2.6 - March 04 2021 =
+* Added Breadcrumb compatibility for plugins
+* Tested with latest WP version
+
 = 1.2.5 - February 09 2021 =
 * Added Pagination in search page
 

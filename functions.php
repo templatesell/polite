@@ -84,6 +84,9 @@ if ( ! function_exists( 'polite_setup' ) ) :
 		// Add support for default block styles.
 		add_theme_support( 'wp-block-styles' );
 
+		// Add support for Yoast SEO Breadcrumbs.
+        add_theme_support( 'yoast-seo-breadcrumbs' );
+
 		/*
 		 * Add support custom font sizes.
 		 *

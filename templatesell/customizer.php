@@ -74,6 +74,7 @@ if ( !function_exists('polite_default_theme_options_values') ) :
 
             /*Breadcrumb Options*/
             'polite-extra-breadcrumb' => 1,
+            'polite-breadcrumb-selection-option'=> 'theme',
 
         );
 return apply_filters( 'polite_default_theme_options_values', $default_theme_options );
