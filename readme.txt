@@ -4,7 +4,7 @@ Contributors: templatesell
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, blog, news
 Requires at least: 4.5
 Requires PHP: 4.7
-Tested up to: 5.6
+Tested up to: 5.7
 Stable tag: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -30,6 +30,10 @@ Polite includes support for Infinite Scroll in Jetpack.
 * Custom pagination for numeric is made.
 
 == Changelog ==
+= 1.2.7 - April 07 2021 =
+* Fixed Ajax pagination 
+* Tested with latest WP version
+
 = 1.2.6 - March 04 2021 =
 * Added Breadcrumb compatibility for plugins
 * Tested with latest WP version

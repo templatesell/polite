@@ -68,9 +68,9 @@ function polite_scripts() {
 
     wp_localize_script( 'polite-custom', 'polite_ajax', array(
         'ajaxurl' => admin_url( 'admin-ajax.php' ),
-        'paged'     => $paged,
-        'max_num_pages'      => $max_num_pages,
-        'next_posts'      => next_posts( $max_num_pages, false ),
+        'paged'     => absint($paged),
+        'max_num_pages'      => absint($max_num_pages),
+        'next_posts'      => next_posts( absint($max_num_pages), false ),
         'show_more'      => __( 'View More', 'polite' ),
         'no_more_posts'        => __( 'No More', 'polite' ),
     ));
