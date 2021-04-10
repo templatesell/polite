@@ -2633,10 +2633,10 @@ object {
     line-height: 1.7;
     color: #4c4f53;
 }
-.post-excerpt a:hover,
-.post-excerpt a:focus,
-.content a:hover,
-.content a:focus {
+.post-excerpt a,
+.post-excerpt a,
+.content a,
+.content a {
     color: #d42929;
     text-decoration: underline !important;
 }
@@ -3500,6 +3500,7 @@ input[type="radio"]:checked:before {
     font-weight: 400;
     line-height: 1.7;
     color: #4c4f53;
+    padding: 0 15px;
 }
 
 /* comments area: styles for Font Awesome icons */
