@@ -30,6 +30,9 @@ Polite includes support for Infinite Scroll in Jetpack.
 * Custom pagination for numeric is made.
 
 == Changelog ==
+= 1.2.8 - April 10 2021 =
+* Fixed Link underline in single page
+
 = 1.2.7 - April 07 2021 =
 * Fixed Ajax pagination 
 * Tested with latest WP version
