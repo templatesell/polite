@@ -44,7 +44,7 @@ function polite_page() {
 				<div class="theme-title">
 					<h3><?php esc_html_e( 'Looking for theme Documentation?', 'polite' ); ?></h3>
 				</div>
-				<a href="http://www.docs.templatesell.net/polite" target="_blank" class="btn btn-secondary"><?php esc_html_e( 'Documentation - Click Here', 'polite' ); ?></a>
+				<a href="http://docs.templatesell.net/polite" target="_blank" class="btn btn-secondary"><?php esc_html_e( 'Documentation - Click Here', 'polite' ); ?></a>
 			</div>
 		</div>
 		<div class="polite-panel">
@@ -53,6 +53,14 @@ function polite_page() {
 					<h3><?php esc_html_e( 'If you like the theme, please leave a review', 'polite' ); ?></h3>
 				</div>
 				<a href="https://wordpress.org/support/theme/polite/reviews/#new-post" target="_blank" class="btn btn-secondary"><?php esc_html_e( 'Rate this theme', 'polite' ); ?></a>
+			</div>
+		</div>
+		<div class="polite-panel">
+			<div class="polite-panel-content">
+				<div class="theme-title">
+					<h3><?php esc_html_e( 'Recommended plugin for SEO. Rank Math is the best plugin and we would like to recommend it.', 'polite' ); ?></h3>
+				</div>
+				<a href="https://rankmath.com/?ref=wpentire" target="_blank" class="btn btn-secondary"><?php esc_html_e( 'Download Rank Math Plugin', 'polite' ); ?></a>
 			</div>
 		</div>
 	</div>

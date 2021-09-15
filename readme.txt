@@ -209,3 +209,6 @@ License: CC0 1.0 Universal (CC0 1.0)
 Source: https://stocksnap.io/photo/GAXFQX8BXD
 
 * Sidbear icons for the customizer are self created and license under GPL.
+
+== Affiliate Disclosure ==
+Some of the links in this blog post are affiliate links, which means that if you click on one of the product links and then purchase the product, we’ll receive a small fee. No worries though, you’ll still pay the standard amount without any extra cost to you.

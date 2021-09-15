@@ -19,7 +19,7 @@ $wp_customize->add_setting( 'polite_options[polite-extra-breadcrumb]', array(
 
 $wp_customize->add_control( 'polite_options[polite-extra-breadcrumb]', array(
     'label'     => __( 'Enable Breadcrumb', 'polite' ),
-    'description' => __( 'Breadcrumb will appear on all pages except home page. More settings will be on the premium version', 'polite' ),
+    'description' => __( 'Breadcrumb will appear on all pages except home page. More settings will be on the premium version. The link of Rank Math plugin in this setting is an affiliate link, which means that if you click on one of the product link and then purchase the product, we’ll receive a small fee. No worries though, you’ll still pay the standard amount without any extra cost to you.', 'polite' ),
     'section'   => 'polite_extra_options',
     'settings'  => 'polite_options[polite-extra-breadcrumb]',
     'type'      => 'checkbox',
