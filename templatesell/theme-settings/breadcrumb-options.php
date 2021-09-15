@@ -19,7 +19,7 @@ $wp_customize->add_setting( 'polite_options[polite-extra-breadcrumb]', array(
 
 $wp_customize->add_control( 'polite_options[polite-extra-breadcrumb]', array(
     'label'     => __( 'Enable Breadcrumb', 'polite' ),
-    'description' => __( 'Breadcrumb will appear on all pages except home page. More settings will be on the premium version.', 'polite' ),
+    'description' => __( 'Breadcrumb will appear on all pages except home page. More settings will be on the premium version', 'polite' ),
     'section'   => 'polite_extra_options',
     'settings'  => 'polite_options[polite-extra-breadcrumb]',
     'type'      => 'checkbox',
@@ -56,7 +56,12 @@ $wp_customize->add_control('polite_options[polite-breadcrumb-selection-option]',
         'navxt' => __('NavXT Plugin', 'polite'),
     ),
     'label' => __('Select Breadcrumb From', 'polite'),
-    'description' => __('You need to install and activate the respected plugin to show their Breadcrumb. Otherwise, your default theme Breadcrumb will appear. If you see error in search console, then we recommend to use plugin Breadcrumb.', 'polite'),
+    'description' => sprintf('%1$s <a href="%2$s" target="_blank">%3$s</a> %4$s',
+        __( 'You need to install and activate the respected plugin to show their Breadcrumb. Otherwise, your default theme Breadcrumb will appear. If you see error in search console, then we recommend to use plugin Breadcrumb. We recommend', 'polite' ),
+        esc_url('https://rankmath.com/?ref=wpentire'),
+        __('Rank Math Plugin' , 'polite'),
+        __('for better SEO and optimization.' ,'polite')
+    ),
     'section' => 'polite_extra_options',
     'settings' => 'polite_options[polite-breadcrumb-selection-option]',
     'type' => 'select',
