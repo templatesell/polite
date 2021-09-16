@@ -87,6 +87,11 @@ if ( ! function_exists( 'polite_setup' ) ) :
 		// Add support for Yoast SEO Breadcrumbs.
         add_theme_support( 'yoast-seo-breadcrumbs' );
 
+        /**
+		 * Register theme support for Rank Math breadcrumbs
+		 */
+		add_theme_support( 'rank-math-breadcrumbs' );
+
 		/*
 		 * Add support custom font sizes.
 		 *
