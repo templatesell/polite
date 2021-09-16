@@ -61,8 +61,8 @@ function polite_page() {
 					<h3><?php esc_html_e( 'Recommended plugin for SEO. Rank Math is the best plugin and we would like to recommend it.', 'polite' ); ?></h3>
 				</div>
 				<a href="https://rankmath.com/?ref=wpentire" target="_blank" class="btn btn-secondary"><?php esc_html_e( 'Download Rank Math Plugin', 'polite' ); ?></a>
-				<p>
-			<?php esc_html_e( 'Some of the links in this theme are affiliate links, which means that if you click on one of the product links and then purchase the product, we’ll receive a small fee. No worries though, you’ll still pay the standard amount without any extra cost to you.', 'polite' ); ?></p>
+				<span>
+			<?php esc_html_e( 'Some of the links in this theme are affiliate links, which means that if you click on one of the product links and then purchase the product, we’ll receive a small fee. No worries though, you’ll still pay the standard amount without any extra cost to you.', 'polite' ); ?></span>
 			</div>
 		</div>
 	</div>
