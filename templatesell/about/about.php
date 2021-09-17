@@ -62,7 +62,7 @@ function polite_page() {
 				</div>
 				<a href="https://rankmath.com/?ref=templatesell" target="_blank" class="btn btn-secondary"><?php esc_html_e( 'Download Rank Math Plugin', 'polite' ); ?></a>
 				<span>
-			<?php esc_html_e( 'Here we included an affiliate link to Rank Math Plugin. If you click on the link and buy the product, we’ll receive a small fee. No worries though, you’ll still pay the standard amount without any extra cost to you.', 'polite' ); ?></span>
+			<?php esc_html_e( 'Here we included an affiliate link to Rank Math Plugin. If you click on the link and buy the product, we’ll receive a small fee. No worries though, you’ll still pay the standard amount without any extra cost to you.', 'polite' ); ?></span><a href="https://www.templatesell.com/blog/template-sell-uses-rank-math/" target="_blank" class="about-link"><?php esc_html_e( 'Read why Template Sell recommend Rank Math', 'polite' ); ?></a>
 			</div>
 		</div>
 	</div>
