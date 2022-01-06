@@ -16,6 +16,8 @@ if ( ! function_exists( 'polite_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function polite_setup() {
+		//customizer setting default value set
+		$GLOBALS['polite_theme_options'] = polite_get_options_value();
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -138,12 +140,6 @@ if ( ! function_exists( 'polite_setup' ) ) :
         add_image_size('polite-related-size', 600, 400, true); 
         add_image_size('polite-promo-post', 800, 500, true); 
         add_image_size('polite-related-post-thumbnails', 850, 550, true );
-
-        /**
-        * Disable new widget screen
-        * @link https://developer.wordpress.org/block-editor/how-to-guides/widgets/overview/
-        */
-		remove_theme_support( 'widgets-block-editor' ); 
 	}
 endif;
 add_action( 'after_setup_theme', 'polite_setup' );

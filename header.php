@@ -8,7 +8,6 @@
  *
  * @package Polite
  */
-$GLOBALS['polite_theme_options'] = polite_get_options_value();
 global $polite_theme_options;
 $enable_slider = absint($polite_theme_options['polite_enable_slider']);
 $enable_box = $polite_theme_options['polite_enable_promo'];
