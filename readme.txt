@@ -30,7 +30,7 @@ Polite includes support for Infinite Scroll in Jetpack.
 * Custom pagination for numeric is made.
 
 == Changelog ==
-= 1.3.3 - January 06 2021 =
+= 1.3.3 - January 25 2021 =
 * Fix - Widget customizer screen
 * Tested with WP 5.9 
 
