@@ -10,11 +10,9 @@
 global $polite_theme_options;
 $promo_cat = absint($polite_theme_options['polite-promo-select-category']);
 
-if( $promo_cat > 0 && is_home() )
+if( $promo_cat > 0 )
 { ?>
     <section class="polite-promo-section">
-        <?php if ( is_front_page() && is_home() )
-        {  ?>
             <div class="container">
                 <div class="promo-section promo-three">
                     <?php
@@ -71,6 +69,5 @@ if( $promo_cat > 0 && is_home() )
                         <?php endwhile; endif; wp_reset_postdata(); ?>
                 </div>
             </div>
-        <?php } ?>
     </section>
 <?php   }
