@@ -140,7 +140,7 @@ if ( ! function_exists( 'polite_setup' ) ) :
         add_image_size('polite-related-size', 600, 400, true); 
         add_image_size('polite-promo-post', 800, 500, true); 
         add_image_size('polite-related-post-thumbnails', 850, 550, true );
-        add_image_size('polite-portrait-image', 900, 600, true );
+        add_image_size('polite-portrait-image', 600, 900, true );
 	}
 endif;
 add_action( 'after_setup_theme', 'polite_setup' );
